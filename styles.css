@@ -31,7 +31,47 @@ body {
 
 #carrossel {
     padding-inline: 8%; 
+    padding-top: 1rem;
+
 }
+
+#img-carrossel {
+    border-radius: 30px;
+    width: 120rem;
+    height: 67.5rem;
+
+    overflow: hidden;
+
+
+}
+
+#img-carrossel ul {
+    display: flex;
+
+    list-style: none;
+    width: 360rem;
+    height: 67.5rem;
+}
+
+#img-carrossel li {
+    position: relative;
+    animation: slide 15s infinite ease-out;
+}
+
+#img-carrossel li img {
+    border-radius: 30px;
+}
+
+@keyframes slide {
+        0%{left:0rem}
+        20%{left: 0rem}
+        30%{left: -120rem}
+        50%{left:-120rem}
+        60%{left:-240rem}
+        80%{left: -240rem}
+        100%{left: 0rem}
+    }
+    
 
 #img-carrossel img {
     width: 100%;
@@ -60,7 +100,7 @@ body {
 header div {
     padding-left: 2rem;
     display: flex; 
-    gap: 3rem;  
+    gap: 3rem; 
 }
 
 #menuImg {
