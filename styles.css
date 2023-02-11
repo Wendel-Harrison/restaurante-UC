@@ -10,24 +10,39 @@
     font-size: 62.5%; /* 1rem = 10px */
 }
 
-#carrossel {
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    width: 100%;
+}
+
+
+
+/*#img-carrossel {
     background-image: url(./assets/carrossel.svg);
     background-repeat: no-repeat;
-    background-position: center center;
-    height: 950px;
-    background-size: 1200px;
+    background-position: 50% 0%;
+    background-size: 85%;
+    height: 75rem ;
+}*/
 
+#carrossel {
+    padding-inline: 8%; 
+}
 
+#img-carrossel img {
+    width: 100%;
 }
 
 #cabecalho {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 
-    padding: 1.5rem 0px;
+    padding: 1% 0% 0% 0%;
 
-    position: fixed;
     width: 100%;
     z-index: 2;
 }
@@ -36,8 +51,6 @@
     background: none;
     border: none;
     cursor: pointer;
-
-    padding-left: 1.5rem;
 }
 
 #cabecalho, #carrossel {
@@ -45,35 +58,45 @@
 }
 
 header div {
-    display: flex;
-    gap: 5rem;
-
-    
+    padding-left: 2rem;
+    display: flex; 
+    gap: 3rem;  
 }
 
 #menuImg {
-    width: 4.5rem;
+    width: 100%;
 }
 
 #loginImg {
-    width: 4.9rem;
+    width: 100%;
 }
 
 #pesquisa-btn {
-    position: absolute;
-    top: 2.7rem;
-    right: 27.5rem;
+    position: relative;
+    right: 85%;
 }
 
 #logoImg {
-    width: 5.5rem;
-    margin-left: 50px;
+    width: 85%;
+    margin: 0;
+}
+
+.logo {
+    margin-left: 40%;
+}
+
+.inputAndButton {
+    margin-left: 25%;
+}
+
+#pesquisa::placeholder {
+    color: black;
 }
 
 #pesquisa {
 
 
-    width: 27.7rem;
+    width: 90% ;
     height: 3.9rem;
 
     background-color: #4D8764  ;
@@ -81,12 +104,21 @@ header div {
     border-radius: 3rem;
     border: none;
 
-    margin-right: 4.2rem;
+    
 
-    padding-left: 5rem;
+    padding-left: 17%;
     font-size: 2rem;
     color: white;
     font-weight: 700;
+}
+
+
+
+/*////////////// cardapio /////////////*/
+
+.titulo {
+    display: flex;
+    justify-content: space-between;
 }
 
 #cardapio {
@@ -95,25 +127,25 @@ header div {
     padding-bottom: 3rem;
 }
 
+
 #alho {
+
     position: absolute;
-    z-index: 1;
-    left: 105rem;
-    top: 95rem;
+    left: 70%;
+
+    max-width: 30rem;
 }
 
 #planta {
     position: absolute;
-    z-index: 1;
-    top: 130rem;
-    left: 45rem;
+    left: 30%;
 }
 
 #planta2 {
     position: absolute;
     z-index: 1;
-    top: 170rem;
-    left: 5rem;
+    top: 165rem;
+    left: 1%;
 }
 
 #cardapio h2 {
@@ -194,42 +226,45 @@ header div {
     margin-top: 3.9rem;
     margin-inline: 7.5rem;
     border-radius: 3rem;
-
-    gap: 5rem;
-
     align-items: center;
 
-    padding: 5rem;
+    justify-content: space-between;
+
+    padding: 3% 0% 3% 3%;
 }
 
 .pratos h3 {
     font-size: 3.5rem;
     font-weight: 400;
     color: white;
-    margin-left: 14.4rem;
+    margin-left: 12%;
 }
 
 .pratos img {
-    width: 50rem;
+    width: 90%;
 }
 
 .pratos button {
     border: none;
     background: none;
     cursor: pointer;
+
+    width: fit-content;
 }
 
 span {
     margin-left: 10rem;
 }
 
-
+#localizacao {
+    height: 55rem;
+}
 
 #imagem-ovo {
     background-image: url(./assets/ovo.jpeg);
-    background-position: center center;
-    height: 550px;
-    background-size: 1450px;
+    background-position: 50% 20%;
+    height: 100%;
+    width: 100%;
     background-repeat: no-repeat;
 
 }
@@ -237,12 +272,10 @@ span {
 #bloco-preto {
     background-color: black;
     opacity: 80%;
-    height: 55rem;
+    height: 100%;
     max-width: 40.5rem;
     position: relative;
-
     top: -55rem;
-
     color: white;
 }
 
@@ -272,6 +305,112 @@ span {
     margin-top: 1rem;
     cursor: pointer;
 }
+
+/*============= FOOTER =============*/
+
+footer {
+    background-color: #4D8764;
+
+}
+
+#infoFooter {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#lado-esquerdo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    gap: 3rem;
+
+    padding-top: 5.6rem;
+    padding-bottom: 2rem;
+    width: 50%;
+}
+
+#lado-direito {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding-top: 10rem;
+
+
+}
+
+#info-restaurante {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#info-restaurante div {
+    display: flex;
+    align-items: center;
+
+    color: white;
+    gap: 3rem ;
+    
+}
+
+#info-restaurante p {
+    padding-right: 25rem;
+}
+
+
+#info-restaurante h3 {
+    font-size: 2.5rem;
+}
+
+.footer-info {
+    font-size: 2rem;
+    color: white;
+}
+
+#atendimento {
+    display: flex;
+    gap: 5%;
+}
+
+#navegacao, #redes-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+#navegacao ul li a, #redes-sociais ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+#navegacao ul, #redes-sociais ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+}
+
+#redes-sociais {
+    padding-right: 25rem;
+}
+
+#copyright {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1.6rem;
+
+    padding-inline: 10rem;
+    padding-block: 3rem;
+}
+
+#span-copy {
+    margin-inline: 3rem;
+}
+
 
 
 
