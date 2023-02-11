@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'inter', sans;
+}
+
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+}
+
+#carrossel {
+    background-image: url(./assets/carrossel.svg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 950px;
+    background-size: 1200px;
+
+
+}
+
+#cabecalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 1.5rem 0px;
+
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+#cabecalho button {
+    background: none;
+    border: none;
+    cursor: pointer;
+
+    padding-left: 1.5rem;
+}
+
+#cabecalho, #carrossel {
+    background-color: #6CBE83;
+}
+
+header div {
+    display: flex;
+    gap: 5rem;
+
+    
+}
+
+#menuImg {
+    width: 4.5rem;
+}
+
+#loginImg {
+    width: 4.9rem;
+}
+
+#pesquisa-btn {
+    position: absolute;
+    top: 2.7rem;
+    right: 27.5rem;
+}
+
+#logoImg {
+    width: 5.5rem;
+    margin-left: 50px;
+}
+
+#pesquisa {
+
+
+    width: 27.7rem;
+    height: 3.9rem;
+
+    background-color: #4D8764  ;
+    opacity: 70%;
+    border-radius: 3rem;
+    border: none;
+
+    margin-right: 4.2rem;
+
+    padding-left: 5rem;
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+}
+
+#cardapio {
+    padding-top: 1.5rem;
+    background: linear-gradient(to top, #4D8764 50%, #6CBE83 100%);
+    padding-bottom: 3rem;
+}
+
+#alho {
+    position: absolute;
+    z-index: 1;
+    left: 105rem;
+    top: 95rem;
+}
+
+#planta {
+    position: absolute;
+    z-index: 1;
+    top: 130rem;
+    left: 45rem;
+}
+
+#planta2 {
+    position: absolute;
+    z-index: 1;
+    top: 170rem;
+    left: 5rem;
+}
+
+#cardapio h2 {
+    font-family: 'dancing script', sans;
+    font-size: 6.5rem;
+    font-weight: 400;
+    line-height: 12.4rem;
+    
+    padding-left: 4.6rem;
+}
+.container {
+    background-color: #DBE5DE;
+    margin-inline: 5.1rem;
+    margin-bottom: 5.1rem;
+    border-radius: .5rem;
+
+    padding: 1rem;
+}
+
+
+.prato {
+    display: flex;
+
+    background-color: #4D8764;
+    opacity: 90%;
+    width: 57.2rem;
+    height: 19.5rem;
+
+    border-radius: 3rem;
+
+    color: white;
+
+    align-items: center;
+}
+
+.prato img {
+    width: 14rem;
+    height: 14rem;
+    margin: 27px 25px;
+
+    border-radius: 3rem;
+}
+
+.prato div {
+    display: flex;
+    flex-direction: column;
+    gap: 2.8rem;
+}
+
+.prato h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.prato p {
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+#prato-chef1 {
+    margin-left: 6rem;
+    padding-top: 0.1rem;
+
+    margin-bottom: 1rem;
+    
+}
+
+#flex-dire{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 6rem;
+}
+
+.pratos {
+    display: flex;
+    background-color: #4D8764;
+    opacity: 90%;
+    margin-top: 3.9rem;
+    margin-inline: 7.5rem;
+    border-radius: 3rem;
+
+    gap: 5rem;
+
+    align-items: center;
+
+    padding: 5rem;
+}
+
+.pratos h3 {
+    font-size: 3.5rem;
+    font-weight: 400;
+    color: white;
+    margin-left: 14.4rem;
+}
+
+.pratos img {
+    width: 50rem;
+}
+
+.pratos button {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+span {
+    margin-left: 10rem;
+}
+
+
+
+#imagem-ovo {
+    background-image: url(./assets/ovo.jpeg);
+    background-position: center center;
+    height: 550px;
+    background-size: 1450px;
+    background-repeat: no-repeat;
+
+}
+
+#bloco-preto {
+    background-color: black;
+    opacity: 80%;
+    height: 55rem;
+    max-width: 40.5rem;
+    position: relative;
+
+    top: -55rem;
+
+    color: white;
+}
+
+#bloco-preto p {
+    padding-top: 10rem;
+    padding-inline: 2rem;
+    font-size: 2.3rem;
+
+}
+
+.span2 {
+    margin-left: 6rem;
+}
+
+#span3 {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+#localizacao button {
+    border: none;
+    background: none;
+    color: #6CBE83;
+
+    font-size: 2.7rem;
+    margin-left: 15.5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+
+
+
+
