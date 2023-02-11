@@ -8,6 +8,11 @@
 
 :root {
     font-size: 62.5%; /* 1rem = 10px */
+
+    --cor-primaria: #4D8764;
+    --cor-secundaria: #6CBE83;
+
+    --cor-texto: #FFFFFF;
 }
 
 html {
@@ -94,7 +99,7 @@ body {
 }
 
 #cabecalho, #carrossel {
-    background-color: #6CBE83;
+    background-color: var(--cor-secundaria);
 }
 
 header div {
@@ -109,6 +114,13 @@ header div {
 
 #loginImg {
     width: 100%;
+    
+}
+
+#loginImg:hover {
+    background-color: var(--cor-texto);
+    border-radius: 30px;
+    transition: 0.1s;
 }
 
 #pesquisa-btn {
@@ -139,7 +151,7 @@ header div {
     width: 90% ;
     height: 3.9rem;
 
-    background-color: #4D8764  ;
+    background-color: var(--cor-primaria)  ;
     opacity: 70%;
     border-radius: 3rem;
     border: none;
@@ -148,7 +160,7 @@ header div {
 
     padding-left: 17%;
     font-size: 2rem;
-    color: white;
+    color: var(--cor-texto);
     font-weight: 700;
 }
 
@@ -163,7 +175,7 @@ header div {
 
 #cardapio {
     padding-top: 1.5rem;
-    background: linear-gradient(to top, #4D8764 50%, #6CBE83 100%);
+    background: linear-gradient(to top, var(--cor-primaria) 50%, var(--cor-secundaria) 100%);
     padding-bottom: 3rem;
 }
 
@@ -184,7 +196,7 @@ header div {
 #planta2 {
     position: absolute;
     z-index: 1;
-    top: 165rem;
+    top: 155rem;
     left: 1%;
 }
 
@@ -209,14 +221,14 @@ header div {
 .prato {
     display: flex;
 
-    background-color: #4D8764;
+    background-color: var(--cor-primaria);
     opacity: 90%;
     width: 57.2rem;
     height: 19.5rem;
 
     border-radius: 3rem;
 
-    color: white;
+    color: var(--cor-texto);
 
     align-items: center;
 }
@@ -261,7 +273,7 @@ header div {
 
 .pratos {
     display: flex;
-    background-color: #4D8764;
+    background-color: var(--cor-primaria);
     opacity: 90%;
     margin-top: 3.9rem;
     margin-inline: 7.5rem;
@@ -276,7 +288,7 @@ header div {
 .pratos h3 {
     font-size: 3.5rem;
     font-weight: 400;
-    color: white;
+    color: var(--cor-texto);
     margin-left: 12%;
 }
 
@@ -316,7 +328,7 @@ span {
     max-width: 40.5rem;
     position: relative;
     top: -55rem;
-    color: white;
+    color: var(--cor-texto);
 }
 
 #bloco-preto p {
@@ -338,7 +350,7 @@ span {
 #localizacao button {
     border: none;
     background: none;
-    color: #6CBE83;
+    color: var(--cor-secundaria);
 
     font-size: 2.7rem;
     margin-left: 15.5rem;
@@ -349,7 +361,7 @@ span {
 /*============= FOOTER =============*/
 
 footer {
-    background-color: #4D8764;
+    background-color: var(--cor-primaria);
 
 }
 
@@ -391,7 +403,7 @@ footer {
     display: flex;
     align-items: center;
 
-    color: white;
+    color: var(--cor-texto);
     gap: 3rem ;
     
 }
@@ -407,7 +419,7 @@ footer {
 
 .footer-info {
     font-size: 2rem;
-    color: white;
+    color: var(--cor-texto);
 }
 
 #atendimento {
@@ -423,7 +435,7 @@ footer {
 
 #navegacao ul li a, #redes-sociais ul li a{
     text-decoration: none;
-    color: white;
+    color: var(--cor-texto);
 }
 
 #navegacao ul, #redes-sociais ul {
@@ -435,6 +447,11 @@ footer {
 
 #redes-sociais {
     padding-right: 25rem;
+}
+
+#redes-sociais ul {
+    display: flex;
+    justify-content: center;
 }
 
 #copyright {
