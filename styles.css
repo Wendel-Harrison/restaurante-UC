@@ -4,6 +4,8 @@
     box-sizing: border-box;
 
     font-family: 'inter', sans;
+
+    text-decoration: none;
 }
 
 :root {
@@ -19,11 +21,6 @@ html {
     height: 100%;
     width: 100%;
 }
-
-body {
-    width: 100%;
-}
-
 
 
 /*#img-carrossel {
@@ -86,7 +83,7 @@ body {
     display: flex;
     align-items: center;
 
-    padding: 1% 0% 0% 0%;
+    padding: 1% 0% 0% 7%;
 
     width: 100%;
     z-index: 2;
@@ -114,7 +111,6 @@ header div {
 
 #loginImg {
     width: 100%;
-    
 }
 
 #loginImg:hover {
@@ -162,6 +158,139 @@ header div {
     font-size: 2rem;
     color: var(--cor-texto);
     font-weight: 700;
+}
+
+/*===== Menu sidebar ========*/
+
+.sidebar {
+    position: absolute;
+    width: 30rem;
+    left: -30rem;
+    height: 97.6%;
+    background: linear-gradient(to top, var(--cor-primaria) 50%, var(--cor-secundaria) 100%);;
+    transition: all .5s ease;
+    z-index: 1;
+}
+
+.sidebar aside {
+
+    font-size: 2.8rem;
+    color: white;
+    line-height: 7rem;
+    text-align: center;
+    user-select: none;
+}
+
+.sidebar a{
+    display: flex;
+    align-items: center;
+    height: 6.5rem;
+    width: 100%;
+    color: white;
+    line-height: 6.5rem;
+    transition: all .5s ease;
+    border-bottom: .1rem solid var(--cor-primaria);
+    border-top: .1rem solid rgba(255, 255, 255, .1);
+    border-left: .5rem solid transparent;
+}
+
+a.active,a:hover {
+    border-left: .5rem solid #a2ff56;
+    color: #a2ff56;
+}
+
+.sidebar a i {
+    font-size: 3rem;
+    margin-left: 3rem;
+}
+
+.sidebar a span {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    
+}
+
+#check {
+    display: none;
+
+}
+
+label #btn,label #cancel {
+    position: absolute;
+    cursor: pointer;
+    color: var(--cor-secundaria);
+    border-radius: .5rem;
+    margin: 2rem 3rem;
+    font-size: 2.8rem;
+    height: 5rem;
+    width: 5rem;
+    transition: all .5s ease;
+
+    border: .1rem solid #262626 ;
+    background: #262626;
+    text-align: center;
+    line-height: 5rem;
+}
+
+label #cancel{
+    opacity: 0;
+    visibility: hidden;
+}
+
+#check:checked ~ .sidebar{
+    left: 0;
+}
+
+#check:checked ~ label #cancel{
+    margin-left: 30.5rem;
+    opacity: 1;
+    visibility: visible;
+   
+}
+
+/* ========== sidebar mobile ========*/
+
+@media(max-width: 700px){.sidebar{
+    height: auto;
+    width: 6rem;
+    left: 0;
+    margin: 10rem 0;
+    }
+
+    aside,#btn,#cancel {
+        display: none;
+    }
+
+    span {
+        position: absolute;
+        margin-left: 2.3rem;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .sidebar a{
+        height: 6rem;
+    }
+
+    .sidebar a i {
+        margin-left: 1px;
+        padding-left: 1rem;
+    }
+
+    a:hover {
+        width: 20rem;
+        background: inherit;
+        border-bottom-right-radius: 30px;
+    }
+
+    .sidebar a:hover span {
+        opacity: 1;
+        visibility: visible;
+        margin-left: 4rem;
+    }
+
 }
 
 
@@ -304,7 +433,7 @@ header div {
     width: fit-content;
 }
 
-span {
+#span-pratos {
     margin-left: 10rem;
 }
 

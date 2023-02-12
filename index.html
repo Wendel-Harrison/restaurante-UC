@@ -12,19 +12,48 @@
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 
 <script src="https://kit.fontawesome.com/f76e9142dc.js" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://kit.fontawesome.com/f76e9142dc.css" crossorigin="anonymous">
 </head>
 <body>
-    <header id="cabecalho">
-        <div>
-            <button>
-                <img src="./assets/menu.svg" alt="" id="menuImg">
+    <input type="checkbox" id="check">
+    <label for="check">
+        <i class="fas fa-bars" id="btn"></i>
+        <i class="fas fa-times" id="cancel"></i>
+    </label>
 
-            </button>
-    
-            <button>
-                <img src="./assets/loginIcon.svg" alt="" id="loginImg">
-            </button>            
-        </div>
+    <div class="sidebar">
+        <aside>MENU</aside>
+        <a href="#">
+            <i class="fa-solid fa-user"></i>
+            <span>Login</span>
+        </a>
+
+        <a href="#">
+            <i class="fa-solid fa-bowl-food"></i>
+            <span>cardapio</span>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-street-view"></i>
+            <span>Localização</span>
+        </a>
+        <a href="#">
+            <i class="fa-solid fa-comment-dots"></i>
+            <span>Feedbacks</span>
+        </a>
+        <a href="#">
+            <i class="fas fa-question-circle"></i>
+            <span>Sobre</span>
+        </a>
+        <a href="#">
+            <i class="fa-brands fa-instagram"></i>
+            <span>instagram</span> 
+        </a>
+    </div>
+    <header id="cabecalho"> 
+        <button>
+            <img src="./assets/loginIcon.svg" alt="" id="loginImg">
+        </button>            
 
         <a href="#" class="logo">
             <img src="./assets/logo.svg" alt="" id="logoImg">
@@ -101,7 +130,7 @@
             
             
             <div class="pratos">
-                <h3>Confira todo o <br><span>nosso cardápio</span> <br>clicando ao lado!</h3>
+                <h3>Confira todo o <br><span id="span-pratos">nosso cardápio</span> <br>clicando ao lado!</h3>
                 
                 <button>
                     <img src="./assets/pratos.svg" alt="">
