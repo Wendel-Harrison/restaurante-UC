@@ -1,10 +1,10 @@
-# restaurante-UC
+# restaurante-UC 🥗
 
-<center> <h3> Este está sendo um projeto desenvolvido por um grupo de 6 pessoas que estão cursando o PROA (curso de desenvolvimento JAVA web). 
+ <h3 align="center"> Este está sendo um projeto desenvolvido por um grupo de 6 pessoas que estão cursando o PROA (curso de desenvolvimento JAVA web). </h3>
 
-<h4> O nosso restaurante tem como base muitos sites grandes e que vimos que são mal desenvolvidos e, pensando nisso, criamos uma interface mais simples e mais intuitiva.
+<h4 align="center"> O nosso restaurante tem como base muitos sites grandes e que vimos que são mal desenvolvidos e, pensando nisso, criamos uma interface mais simples e mais intuitiva. </h4>
 
-as linguaguens e ferramentas utilizadas foram: </center>
+ <p align="center"> 🚀 Linguaguens e ferramentas utilizadas foram: </p>
 
 {
     <ul>
@@ -16,9 +16,9 @@ as linguaguens e ferramentas utilizadas foram: </center>
     </ul>
 }
 
-<center>Para ver o design e layout do projeto acesse: <a></a>
+<p align="center">Para ver o design e layout do projeto acesse: </p>
 
-Colabores: 
+<p align="center">Colabores: </p>
 
 Wendel Harrison;<br>
 Gabriela Nunes;<br>
