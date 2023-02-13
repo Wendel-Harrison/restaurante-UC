@@ -66,6 +66,10 @@ body {
     height: 67.5rem;
 }
 
+#img-mobile {
+    display: none;
+}
+
 
 #img-carrossel-pc li {
     position: relative;
@@ -844,7 +848,7 @@ footer {
     .pratos h3, #span-pratos {
         visibility: visible;
         opacity: 1;
-        margin-left: -5rem;
+        margin-left: -3rem;
     }
 
      
@@ -869,6 +873,7 @@ footer {
     #infoFooter {
         display: block;
         width: 100%;
+        padding-block: 2rem;
     }
 
     #lado-esquerdo {
@@ -904,6 +909,7 @@ footer {
 
     #copyright, #copyright p {
         padding-inline: initial;
+        padding-top: 1rem;
         font-size: 1.4rem;
         
     }
