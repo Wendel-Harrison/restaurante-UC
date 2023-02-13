@@ -351,7 +351,7 @@ nav #check:checked ~ label #cancel{
 #alho {
 
     position: absolute;
-    left: 110rem;
+    left: 100rem;
     top: 80rem;
     padding-left: 5rem;
 
@@ -360,7 +360,7 @@ nav #check:checked ~ label #cancel{
 
 #planta {
     position: absolute;
-    left: 45rem;
+    left: 40rem;
     top: 112rem;
     z-index: 1;
 }
@@ -409,7 +409,7 @@ nav #check:checked ~ label #cancel{
 .prato img {
     width: 14rem;
     height: 14rem;
-    margin: 27px 25px;
+    margin: 2.7rem 2.5rem;
 
     border-radius: 3rem;
 }
@@ -697,12 +697,13 @@ footer {
     }
 
     #pesquisa {
-        width: 20rem;
+        width: 15rem;
         padding-left: 3rem;
     }
 
     #logoImg {
         width: 5rem;
+        margin-left: 3rem;
     }
 
     #carrossel {
@@ -735,12 +736,22 @@ footer {
     }
 
     .prato p {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
         margin-left: 1rem;
     }
 
+    .prato img {
+        width: 10rem;
+        height: 10rem;
+        margin: 1rem;
+    }
+
+    .prato div {
+        gap: 2rem;
+    }
+
     .prato h3 {
-        font-size: 2rem;
+        font-size: 1.7rem;
         text-align: center;
     }
 
