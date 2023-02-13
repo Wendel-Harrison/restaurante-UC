@@ -16,42 +16,45 @@
 <link rel="stylesheet" href="https://kit.fontawesome.com/f76e9142dc.css" crossorigin="anonymous">
 </head>
 <body>
-    <input type="checkbox" id="check">
-    <label for="check">
-        <i class="fas fa-bars" id="btn"></i>
-        <i class="fas fa-times" id="cancel"></i>
-    </label>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check">
+            <i class="fas fa-bars" id="btn"></i>
+            <i class="fas fa-times" id="cancel"></i>
+        </label>
+        <div class="sidebar">
+            <aside>MENU</aside>
+            <a href="#">
+                <i class="fa-solid fa-user"></i>
+                <span>Login</span>
+            </a>
+    
+            <a href="#">
+                <i class="fa-solid fa-bowl-food"></i>
+                <span>cardapio</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-street-view"></i>
+                <span>Localização</span>
+            </a>
+            <a href="#">
+                <i class="fa-solid fa-comment-dots"></i>
+                <span>Feedbacks</span>
+            </a>
+            <a href="#">
+                <i class="fas fa-question-circle"></i>
+                <span>Sobre</span>
+            </a>
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+                <span>instagram</span> 
+            </a>
+        </div>
 
-    <div class="sidebar">
-        <aside>MENU</aside>
-        <a href="#">
-            <i class="fa-solid fa-user"></i>
-            <span>Login</span>
-        </a>
+    </nav>
 
-        <a href="#">
-            <i class="fa-solid fa-bowl-food"></i>
-            <span>cardapio</span>
-        </a>
-        <a href="#">
-            <i class="fa-solid fa-street-view"></i>
-            <span>Localização</span>
-        </a>
-        <a href="#">
-            <i class="fa-solid fa-comment-dots"></i>
-            <span>Feedbacks</span>
-        </a>
-        <a href="#">
-            <i class="fas fa-question-circle"></i>
-            <span>Sobre</span>
-        </a>
-        <a href="#">
-            <i class="fa-brands fa-instagram"></i>
-            <span>instagram</span> 
-        </a>
-    </div>
     <header id="cabecalho"> 
-        <button>
+        <button id="login-btn">
             <img src="./assets/loginIcon.svg" alt="" id="loginImg">
         </button>            
 
@@ -69,11 +72,6 @@
         
 
     </header>
-
-    <nav id="navegacao">
-
-    </nav>
-
 
     <main id="carrossel">
 
@@ -94,25 +92,30 @@
         <div class="titulo">
             <h2>Dê uma olhadinha no nosso cardápio...</h2>
     
-            <img src="./assets/alho.svg" alt="" id="alho">
-
+            
         </div>
-
         
+        
+        
+        <img src="./assets/alho.svg" alt="" id="alho">
+        <img src="./assets/planta.svg" alt="" id="planta">
+        <img src="./assets/planta2.svg" alt="" id="planta2">
         
         
         <div class="container">
-            <div class="prato" id="prato-chef1">
-                <img src="./pratos/Tradicional Atum.webp" alt="">
-                
-                <div>
-                    <h3>PRATO DO CHEF - ATUM</h3>
-                    <p>Salmão, escolha a base (mix de folhas, espaguete de abobrinha ou quinoa), abacate, tomate sweet grape. amendoim, edamame, crisp de couve e nori.</p>
+            <div>
+                <div class="prato" id="prato-chef1">
+                    <img src="./pratos/Tradicional Atum.webp" alt="">
+                    
+                    <div>
+                        <h3>PRATO DO CHEF - ATUM</h3>
+                        <p>Salmão, escolha a base (mix de folhas, espaguete de abobrinha ou quinoa), abacate, tomate sweet grape. amendoim, edamame, crisp de couve e nori.</p>
+                    </div>
                 </div>
+                
             </div>
-
-            <img src="./assets/planta.svg" alt="" id="planta">
-
+            
+            
             <div id="flex-dire">
                 <div class="prato" id="prato-chef2">
                     <img src="./pratos/Tradicional Salmão.webp" alt="">
@@ -122,15 +125,14 @@
                         <p>Salmão, escolha a base (mix de folhas, espaguete de abobrinha ou quinoa), abacate, tomate sweet grape. amendoim, edamame, crisp de couve e nori.</p>
                     </div>
                 </div>
-                
             </div>
 
-            <img src="./assets/planta2.svg" alt="" id="planta2">
 
             
             
             <div class="pratos">
-                <h3>Confira todo o <br><span id="span-pratos">nosso cardápio</span> <br>clicando ao lado!</h3>
+                <h3>Confira
+                     todo o <br><span id="span-pratos">nosso cardápio</span> <br>clicando ao lado!</h3>
                 
                 <button>
                     <img src="./assets/pratos.svg" alt="">

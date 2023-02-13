@@ -19,7 +19,16 @@
 
 html {
     height: 100%;
-    width: 100%;
+    max-width: fit-content;
+
+    scroll-behavior: smooth;
+
+   background-color: var(--cor-secundaria);
+
+}
+
+body {
+    overflow: overlay;
 }
 
 
@@ -43,6 +52,8 @@ html {
     height: 67.5rem;
 
     overflow: hidden;
+
+    max-width: 100%;
 
 
 }
@@ -162,17 +173,17 @@ header div {
 
 /*===== Menu sidebar ========*/
 
-.sidebar {
+nav .sidebar {
     position: absolute;
     width: 30rem;
     left: -30rem;
-    height: 97.6%;
+    height: 100vh;
     background: linear-gradient(to top, var(--cor-primaria) 50%, var(--cor-secundaria) 100%);;
     transition: all .5s ease;
     z-index: 1;
 }
 
-.sidebar aside {
+nav .sidebar aside {
 
     font-size: 2.8rem;
     color: white;
@@ -181,7 +192,7 @@ header div {
     user-select: none;
 }
 
-.sidebar a{
+nav .sidebar a{
     display: flex;
     align-items: center;
     height: 6.5rem;
@@ -194,17 +205,17 @@ header div {
     border-left: .5rem solid transparent;
 }
 
-a.active,a:hover {
+nav a.active,a:hover {
     border-left: .5rem solid #a2ff56;
     color: #a2ff56;
 }
 
-.sidebar a i {
+nav .sidebar a i {
     font-size: 3rem;
     margin-left: 3rem;
 }
 
-.sidebar a span {
+nav .sidebar a span {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-size: 1.6rem;
@@ -212,12 +223,12 @@ a.active,a:hover {
     
 }
 
-#check {
+nav #check {
     display: none;
 
 }
 
-label #btn,label #cancel {
+nav label #btn,label #cancel {
     position: absolute;
     cursor: pointer;
     color: var(--cor-secundaria);
@@ -232,18 +243,20 @@ label #btn,label #cancel {
     background: #262626;
     text-align: center;
     line-height: 5rem;
+
+    max-width: 100%;
 }
 
-label #cancel{
+nav label #cancel{
     opacity: 0;
     visibility: hidden;
 }
 
-#check:checked ~ .sidebar{
+nav #check:checked ~ .sidebar{
     left: 0;
 }
 
-#check:checked ~ label #cancel{
+nav #check:checked ~ label #cancel{
     margin-left: 30.5rem;
     opacity: 1;
     visibility: visible;
@@ -252,40 +265,41 @@ label #cancel{
 
 /* ========== sidebar mobile ========*/
 
-@media(max-width: 700px){.sidebar{
+@media(max-width: 800px){nav .sidebar{
+    position: fixed;
     height: auto;
     width: 6rem;
     left: 0;
     margin: 10rem 0;
     }
 
-    aside,#btn,#cancel {
+    nav aside,#btn,#cancel {
         display: none;
     }
 
-    span {
+    nav span {
         position: absolute;
         margin-left: 2.3rem;
         opacity: 0;
         visibility: hidden;
     }
 
-    .sidebar a{
+    nav .sidebar a{
         height: 6rem;
     }
 
-    .sidebar a i {
+    nav .sidebar a i {
         margin-left: 1px;
         padding-left: 1rem;
     }
 
-    a:hover {
+    nav a:hover {
         width: 20rem;
         background: inherit;
         border-bottom-right-radius: 30px;
     }
 
-    .sidebar a:hover span {
+    nav .sidebar a:hover span {
         opacity: 1;
         visibility: visible;
         margin-left: 4rem;
@@ -312,21 +326,26 @@ label #cancel{
 #alho {
 
     position: absolute;
-    left: 70%;
+    left: 110rem;
+    top: 80rem;
+    padding-left: 5rem;
 
     max-width: 30rem;
 }
 
 #planta {
     position: absolute;
-    left: 30%;
+    left: 45rem;
+    top: 112rem;
+    z-index: 1;
 }
 
 #planta2 {
     position: absolute;
     z-index: 1;
+
     top: 155rem;
-    left: 1%;
+    
 }
 
 #cardapio h2 {
@@ -597,7 +616,139 @@ footer {
     margin-inline: 3rem;
 }
 
+/*======== RESPONSIVO ==========*/
 
+@media (max-width: 800px) {
+    
+    
+    #cabecalho *, #cabecalho {
+        overflow: auto;
+        margin: 0;
+        padding: 0;
+        visibility: initial;
+        display: initial;
+        opacity: initial;
+        flex-direction: initial;
+        position: initial;
+        font-size: initial;
+        color: initial;
+        font-weight: initial;
+        filter: initial;
+        background: initial;
+    }
+
+    #cabecalho {
+        background-color: var(--cor-secundaria);
+        display: flex;
+        align-items: center;
+    }
+
+    .inputAndButton {
+        display: flex;
+        align-items: center;
+    }
+
+    #pesquisa {
+        margin-left: 30rem;
+        padding-left: 5rem;
+        width: 15rem;
+
+        background-color: var(--cor-primaria);
+
+    
+    }
+
+    #lupaImg {
+        position: absolute;
+        left: 42rem;
+        top: 1.8rem;
+    }
+
+    #alho, #planta, #planta2, #login-btn, #login-btn * {
+        visibility: hidden;
+    }
+
+    nav #login-btn {
+        visibility: hidden;
+    }
+
+    #cabecalho {
+        visibility: visible;
+        width: 100%;
+    }
+
+    #pesquisa {
+        width: 20rem;    
+    }
+
+    #logoImg {
+        width: 5rem;
+    }
+
+    #carrossel {
+        width: 100%;
+        height: 35rem;
+        z-index: 1;
+    }
+
+    #img-carrossel {
+        width: 100%;
+        height: 100%;
+    }
+
+
+    #cardapio .titulo h2 {
+        font-size: 4.5rem;
+        margin: initial;
+        padding: initial;
+        line-height: initial;
+        text-align: center;
+    }
+
+    #prato-chef1, #flex-dire {
+        margin: initial;
+        padding: initial;
+        margin-bottom: 2rem;
+      
+    }
+
+    .prato p {
+        font-size: 1.6rem;
+    }
+
+    .prato h3 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .container {
+        margin: initial;
+        background-color: transparent;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pratos {
+        margin-top: initial;
+        width: 100%;
+    }
+
+    .pratos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pratos h3, #span-pratos {
+        visibility: visible;
+        opacity: 1;
+        margin-left: -5rem;
+    }
+}
 
 
 
