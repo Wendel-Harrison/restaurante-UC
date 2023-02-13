@@ -46,7 +46,7 @@ body {
 
 }
 
-#img-carrossel {
+#img-carrossel-pc {
     border-radius: 30px;
     width: 120rem;
     height: 67.5rem;
@@ -58,7 +58,7 @@ body {
 
 }
 
-#img-carrossel ul {
+#img-pc {
     display: flex;
 
     list-style: none;
@@ -66,12 +66,13 @@ body {
     height: 67.5rem;
 }
 
-#img-carrossel li {
+
+#img-carrossel-pc li {
     position: relative;
     animation: slide 15s infinite ease-out;
 }
 
-#img-carrossel li img {
+#img-carrossel-pc li img {
     border-radius: 30px;
 }
 
@@ -86,7 +87,7 @@ body {
     }
     
 
-#img-carrossel img {
+#img-carrossel-pc img {
     width: 100%;
 }
 
@@ -665,6 +666,58 @@ footer {
         background-color: var(--cor-secundaria);
     }
 
+    #carrossel {
+        width: 44rem;
+    }
+
+    #img-carrossel-mobile ul {
+        position: relative;
+        width: 133.2rem;
+        height: 25rem;
+    }
+
+    #img-carrossel-mobile {
+        border-radius: 3rem;
+        height: 25rem;
+        width: 44.4rem;
+
+        overflow: hidden;
+
+        max-width: 100%;
+    }
+    #img-carrossel-mobile li {
+        position: relative;
+        animation: slide 15s infinite ease-out;
+    }
+
+    @keyframes slide {
+        0%{left:0rem}
+        20%{left: 0rem}
+        30%{left: -44.4rem}
+        50%{left:-44.4rem}
+        60%{left:-88.8rem}
+        80%{left: -88.8rem}
+        100%{left: 0rem}
+    }
+
+    #img-carrossel-mobile li img {
+        border-radius: 30px;
+    }
+
+    #img-mobile {
+        display: flex;
+        list-style: none;
+        width: 133.2rem;
+        height: 25rem;
+
+    }
+
+    #img-carrossel-pc {
+        display: none;
+    }
+
+     
+
     .inputAndButton {
         display: flex;
         align-items: center;
@@ -708,13 +761,24 @@ footer {
 
     #carrossel {
         width: 100%;
-        height: 35rem;
+        height: 25rem;
         z-index: 1;
     }
 
     #img-carrossel {
         width: 100%;
         height: 100%;
+    }
+
+    #img-pc {
+        display: none;
+    }
+
+    #img-mobile{
+        display: flex;
+    
+        list-style: none;
+        width: 133.2rem;
     }
 
 
