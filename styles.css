@@ -491,7 +491,7 @@ nav #check:checked ~ label #cancel{
 }
 
 #imagem-ovo {
-    background-image: url(../assets/ovo.jpeg);
+    background-image: url(./assets/ovo.jpeg);
     background-position: 50% 20%;
     height: 100%;
     width: 100%;
