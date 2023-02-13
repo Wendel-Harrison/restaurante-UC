@@ -266,14 +266,39 @@ nav #check:checked ~ label #cancel{
 /* ========== sidebar mobile ========*/
 
 @media(max-width: 800px){nav .sidebar{
-    position: fixed;
+    opacity: 0;
+    visibility: hidden;
     height: auto;
     width: 6rem;
     left: 0;
-    margin: 10rem 0;
+    margin: 7rem 0;
     }
 
-    nav aside,#btn,#cancel {
+    nav #btn {
+        position: fixed;
+        left: -2.5rem;
+    }
+
+    #cancel {
+        position: fixed;
+    }
+
+    nav #check:checked ~ label #cancel{
+        margin-top: 2rem;
+        margin-left: 0.5rem;
+    }
+
+    nav #check:checked ~ label #btn {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav #check:checked ~ .sidebar {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    nav aside{
         display: none;
     }
 
@@ -302,7 +327,7 @@ nav #check:checked ~ label #cancel{
     nav .sidebar a:hover span {
         opacity: 1;
         visibility: visible;
-        margin-left: 4rem;
+        margin-left: 5rem;
     }
 
 }
@@ -619,8 +644,7 @@ footer {
 /*======== RESPONSIVO ==========*/
 
 @media (max-width: 800px) {
-    
-    
+       
     #cabecalho *, #cabecalho {
         overflow: auto;
         margin: 0;
@@ -639,8 +663,6 @@ footer {
 
     #cabecalho {
         background-color: var(--cor-secundaria);
-        display: flex;
-        align-items: center;
     }
 
     .inputAndButton {
@@ -649,8 +671,7 @@ footer {
     }
 
     #pesquisa {
-        margin-left: 30rem;
-        padding-left: 5rem;
+        
         width: 15rem;
 
         background-color: var(--cor-primaria);
@@ -659,26 +680,25 @@ footer {
     }
 
     #lupaImg {
-        position: absolute;
-        left: 42rem;
-        top: 1.8rem;
+       display: none;
     }
 
     #alho, #planta, #planta2, #login-btn, #login-btn * {
-        visibility: hidden;
-    }
-
-    nav #login-btn {
-        visibility: hidden;
+        display: none;
     }
 
     #cabecalho {
-        visibility: visible;
         width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 2rem;
+
     }
 
     #pesquisa {
-        width: 20rem;    
+        width: 20rem;
+        padding-left: 3rem;
     }
 
     #logoImg {
@@ -705,15 +725,18 @@ footer {
         text-align: center;
     }
 
-    #prato-chef1, #flex-dire {
+     #prato-chef1, #flex-dire {
         margin: initial;
         padding: initial;
         margin-bottom: 2rem;
-      
+        margin-right: 1rem;
+        width: 100%;
+        
     }
 
     .prato p {
         font-size: 1.6rem;
+        margin-left: 1rem;
     }
 
     .prato h3 {
@@ -747,6 +770,67 @@ footer {
         visibility: visible;
         opacity: 1;
         margin-left: -5rem;
+    }
+
+     
+
+    #bloco-preto, #bloco-preto p {
+        max-width: 20rem;
+        font-size: 2rem;
+        padding: initial;
+        padding-top: 4rem;
+        text-align: center;
+    }
+
+    #localizacao span {
+        margin: initial;
+    }
+
+    #localizacao button {
+        margin: initial;
+        margin-top: 2rem;
+    }
+
+    #infoFooter {
+        display: block;
+        width: 100%;
+    }
+
+    #lado-esquerdo {
+        width: 90%;
+    }
+
+    #lado-direito {
+        gap: 10rem;  
+        width: initial;
+
+    }
+
+    #info-restaurante p {
+        padding: initial;
+        margin: initial;
+    }
+
+    #redes-sociais {
+        display: block;
+        width: 100%;
+        padding: initial;
+        
+    }
+
+    #redes-sociais ul {
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    #redes-sociais ul li {
+        display: flex;
+    }
+
+    #copyright, #copyright p {
+        padding-inline: initial;
+        font-size: 1.4rem;
+        
     }
 }
 
