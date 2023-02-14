@@ -1,0 +1,505 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'inter', sans;
+
+    text-decoration: none;
+}
+
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+
+    --cor-primaria: #4D8764;
+    --cor-secundaria: #6CBE83;
+
+    --cor-texto: #FFFFFF;
+}
+
+html {
+    height: 100%;
+    max-width: fit-content;
+
+    scroll-behavior: smooth;
+
+    background-color: #D9D9D9;
+
+}
+
+body {
+    overflow: overlay;
+}
+
+
+/*===== Menu sidebar ========*/
+
+nav .sidebar {
+    position: absolute;
+    width: 30rem;
+    left: -30rem;
+    height: 100vh;
+    background: linear-gradient(to top, var(--cor-primaria) 50%, var(--cor-secundaria) 100%);;
+    transition: all .5s ease;
+    z-index: 1;
+}
+
+nav .sidebar aside {
+
+    font-size: 2.8rem;
+    color: white;
+    line-height: 7rem;
+    text-align: center;
+    user-select: none;
+}
+
+nav .sidebar a{
+    display: flex;
+    align-items: center;
+    height: 6.5rem;
+    width: 100%;
+    color: white;
+    line-height: 6.5rem;
+    transition: all .5s ease;
+    border-bottom: .1rem solid var(--cor-primaria);
+    border-top: .1rem solid rgba(255, 255, 255, .1);
+    border-left: .5rem solid transparent;
+}
+
+nav a.active,a:hover {
+    border-left: .5rem solid #a2ff56;
+    color: #a2ff56;
+}
+
+nav .sidebar a i {
+    font-size: 3rem;
+    margin-left: 3rem;
+}
+
+nav .sidebar a span {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    
+}
+
+nav #check {
+    display: none;
+
+}
+
+nav label #btn,label #cancel {
+    position: absolute;
+    cursor: pointer;
+    color: var(--cor-secundaria);
+    border-radius: .5rem;
+    margin: 2rem 3rem;
+    font-size: 2.8rem;
+    height: 5rem;
+    width: 5rem;
+    transition: all .5s ease;
+
+    border: .1rem solid #262626 ;
+    background: #262626;
+    text-align: center;
+    line-height: 5rem;
+
+    max-width: 100%;
+}
+
+nav label #cancel{
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav #check:checked ~ .sidebar{
+    left: 0;
+}
+
+nav #check:checked ~ label #cancel{
+    margin-left: 30.5rem;
+    opacity: 1;
+    visibility: visible;
+   
+}
+
+/* ========== sidebar mobile ========*/
+
+@media(max-width: 800px){nav .sidebar{
+    opacity: 0;
+    visibility: hidden;
+    height: auto;
+    width: 6rem;
+    left: 0;
+    margin: 7rem 0;
+    }
+
+    nav #btn {
+        position: fixed;
+        left: -2.5rem;
+    }
+
+    #cancel {
+        position: fixed;
+    }
+
+    nav #check:checked ~ label #cancel{
+        margin-top: 2rem;
+        margin-left: 0.5rem;
+    }
+
+    nav #check:checked ~ label #btn {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav #check:checked ~ .sidebar {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    nav aside{
+        display: none;
+    }
+
+    nav span {
+        position: absolute;
+        margin-left: 2.3rem;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav .sidebar a{
+        height: 6rem;
+    }
+
+    nav .sidebar a i {
+        margin-left: 1px;
+        padding-left: 1rem;
+    }
+
+    nav a:hover {
+        width: 20rem;
+        background: inherit;
+        border-bottom-right-radius: 30px;
+    }
+
+    nav .sidebar a:hover span {
+        opacity: 1;
+        visibility: visible;
+        margin-left: 5rem;
+    }
+
+}
+
+/* SEU CODIGO AQUI */
+
+#logof{
+
+        /* logo */
+
+    position: absolute;
+    width: 87px;
+    height: 78.28px;
+    left: 676px;
+    top: 22px;
+
+    background: url(logo.jpg);
+    border-radius: 40.5px;
+}
+
+#background {
+    position: absolute;
+    width: 1440px;
+    height: 1515px;
+    left: 0px;
+    top: 0px;
+
+    background: #D9D9D9;
+
+}
+
+
+/*=======================================  1 =================================================*/
+
+#ellipse1 {
+    /* Ellipse 1 */
+
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    left: 56px;
+    top: 139px;
+    
+    
+}
+
+#estrela1{
+    /* estrela 1*/
+
+    position: absolute;
+    width: 154px;
+    height: 25.67px;
+    left: 438px;
+    top: 214px;
+}
+
+#texto1{
+    /* A minha experiência foi muito boa! Fui super bem atendido e a pizza estava deliciosa!! */
+
+    position: absolute;
+    width: 480px;
+    height: 32px;
+    left: 168px;
+    top: 152px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #000000;
+}
+
+
+
+/*======================================  2 ========================================================*/
+
+
+#ellipse2{
+    /* Ellipse 2 */
+
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    left: 769px;
+    top: 234px;
+
+}
+
+#estrela2{
+    /* estrela 2 */
+
+    position: absolute;
+    width: 151.67px;
+    height: 25.67px;
+    left: 1148px;
+    top: 303px;
+    
+}
+
+#texto2{
+    /* Ambiente colorido arrumado, bom atendimento e pratos muito saborosos! */
+ 
+    position: absolute;
+    width: 480px;
+    height: 32px;
+    left: 878px;
+    top: 247px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    
+    color: #000000;
+ }
+
+
+/*====================================== 3 ========================================================*/
+
+#ellipse3{
+    /* Ellipse 3 */
+
+    position: absolute;
+    width: 95px;
+    height: 95px;
+    left: 56px;
+    top: 415px;
+}
+
+#estrela3{
+    /* estrela 3*/
+
+    position: absolute;
+    width: 154px;
+    height: 25.67px;
+    left: 438px;
+    top: 494px;
+    
+}
+
+#texto3{
+    /* Aqui encontrei não só um atendimento perfeito, mas, também comida limpinha, saudável e deliciosa! */
+
+    position: absolute;
+    width: 480px;
+    height: 32px;
+    left: 168px;
+    top: 420px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    
+    color: #000000;
+ }
+
+
+ /*====================================== CAIXA FEEDBACK ========================================================*/
+
+#btn_enviar{
+
+    position: absolute;
+    width: 98.67px;
+    height: 34.86px;
+    left: 964px;
+    top: 913px;
+    
+    background: #00694A;
+    border-radius: 100px;
+    
+
+}
+
+#cinco_estrelas{
+
+    position: absolute;
+    width: 302.61px;
+    height: 54.76px;
+    left: 364px;
+    top: 919px;
+
+ }
+
+
+#textarea{
+
+    position: absolute;
+    width: 768px;
+    height: 314px;
+    left: 336px;
+    top: 585px;
+    color: #FFFFFF;
+    font-size: 30px;
+    
+    background: linear-gradient(180deg, #369A5E 0%, #0A553F 100%);
+    border-radius: 30px;
+    
+}
+
+
+/*============= FOOTER =============*/
+
+footer {
+    background-color: var(--cor-primaria);
+    margin-top: 950px;
+}
+
+#infoFooter {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#lado-esquerdo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    gap: 3rem;
+
+    padding-top: 5.6rem;
+    padding-bottom: 2rem;
+    width: 50%;
+}
+
+#lado-direito {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding-top: 10rem;
+
+
+}
+
+#info-restaurante {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#info-restaurante div {
+    display: flex;
+    align-items: center;
+
+    color: var(--cor-texto);
+    gap: 5rem ;
+    
+}
+
+#info-restaurante p {
+    padding-right: 40rem;
+}
+
+
+#info-restaurante h3 {
+    font-size: 2.5rem;
+}
+
+.footer-info {
+    font-size: 2rem;
+    color: var(--cor-texto);
+}
+
+#atendimento {
+    display: flex;
+    gap: 5%;
+}
+
+#navegacao, #redes-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+#navegacao ul li a, #redes-sociais ul li a{
+    text-decoration: none;
+    color: var(--cor-texto);
+}
+
+#navegacao ul, #redes-sociais ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+}
+
+#redes-sociais {
+    padding-right: 25rem;
+}
+
+#redes-sociais ul {
+    display: flex;
+    justify-content: center;
+}
+
+#copyright {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1.6rem;
+
+    padding-inline: 10rem;
+    padding-block: 3rem;
+}
+
+#span-copy {
+    margin-inline: 3rem;
+}
