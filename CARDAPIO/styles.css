@@ -1,0 +1,456 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'inter', sans;
+
+    text-decoration: none;
+}
+
+:root {
+    font-size: 62.5%; /* 1rem = 10px */
+
+    --cor-primaria: #4D8764;
+    --cor-secundaria: #6CBE83;
+
+    --cor-texto: #FFFFFF;
+}
+
+html {
+    height: 100%;
+    max-width: fit-content;
+
+    scroll-behavior: smooth;
+
+   background-color: var(--cor-secundaria);
+
+}
+
+body {
+    overflow: overlay;
+}
+
+#cabecalho {
+    display: flex;
+    align-items: center;
+
+    padding: 1% 0% 0% 7%;
+
+    width: 100%;
+    z-index: 2;
+}
+
+#cabecalho button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#cabecalho, #carrossel {
+    background-color: var(--cor-secundaria);
+}
+
+header div {
+    padding-left: 2rem;
+    display: flex; 
+    gap: 3rem; 
+}
+
+#menuImg {
+    width: 100%;
+}
+
+#loginImg {
+    width: 100%;
+}
+
+#loginImg:hover {
+    background-color: var(--cor-texto);
+    border-radius: 30px;
+    transition: 0.1s;
+}
+
+#pesquisa-btn {
+    position: relative;
+    right: 85%;
+}
+
+#logoImg {
+    width: 85%;
+    margin: 0;
+}
+
+.logo {
+    margin-left: 40%;
+}
+
+.inputAndButton {
+    margin-left: 25%;
+}
+
+#pesquisa::placeholder {
+    color: black;
+}
+
+#pesquisa {
+
+
+    width: 90% ;
+    height: 3.9rem;
+
+    background-color: var(--cor-primaria)  ;
+    opacity: 70%;
+    border-radius: 3rem;
+    border: none;
+
+    
+
+    padding-left: 17%;
+    font-size: 2rem;
+    color: var(--cor-texto);
+    font-weight: 700;
+}
+
+/*===== Menu sidebar ========*/
+
+nav .sidebar {
+    position: absolute;
+    width: 30rem;
+    left: -30rem;
+    height: 100vh;
+    background: linear-gradient(to top, var(--cor-primaria) 50%, var(--cor-secundaria) 100%);;
+    transition: all .5s ease;
+    z-index: 1;
+}
+
+nav .sidebar aside {
+
+    font-size: 2.8rem;
+    color: white;
+    line-height: 7rem;
+    text-align: center;
+    user-select: none;
+}
+
+nav .sidebar a{
+    display: flex;
+    align-items: center;
+    height: 6.5rem;
+    width: 100%;
+    color: white;
+    line-height: 6.5rem;
+    transition: all .5s ease;
+    border-bottom: .1rem solid var(--cor-primaria);
+    border-top: .1rem solid rgba(255, 255, 255, .1);
+    border-left: .5rem solid transparent;
+}
+
+nav a.active,a:hover {
+    border-left: .5rem solid #a2ff56;
+    color: #a2ff56;
+}
+
+nav .sidebar a i {
+    font-size: 3rem;
+    margin-left: 3rem;
+}
+
+nav .sidebar a span {
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    margin-left: 2rem;
+    
+}
+
+nav #check {
+    display: none;
+
+}
+
+nav label #btn,label #cancel {
+    position: absolute;
+    cursor: pointer;
+    color: var(--cor-secundaria);
+    border-radius: .5rem;
+    margin: 2rem 3rem;
+    font-size: 2.8rem;
+    height: 5rem;
+    width: 5rem;
+    transition: all .5s ease;
+
+    border: .1rem solid #262626 ;
+    background: #262626;
+    text-align: center;
+    line-height: 5rem;
+
+    max-width: 100%;
+}
+
+nav label #cancel{
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav #check:checked ~ .sidebar{
+    left: 0;
+}
+
+nav #check:checked ~ label #cancel{
+    margin-left: 30.5rem;
+    opacity: 1;
+    visibility: visible;
+   
+}
+
+/* ========== sidebar mobile ========*/
+
+@media(max-width: 800px){nav .sidebar{
+    position: fixed;
+    height: auto;
+    width: 6rem;
+    left: 0;
+    margin: 10rem 0;
+    }
+
+    nav aside,#btn,#cancel {
+        display: none;
+    }
+
+    nav span {
+        position: absolute;
+        margin-left: 2.3rem;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav .sidebar a{
+        height: 6rem;
+    }
+
+    nav .sidebar a i {
+        margin-left: 1px;
+        padding-left: 1rem;
+    }
+
+    nav a:hover {
+        width: 20rem;
+        background: inherit;
+        border-bottom-right-radius: 30px;
+    }
+
+    nav .sidebar a:hover span {
+        opacity: 1;
+        visibility: visible;
+        margin-left: 4rem;
+    }
+
+}
+
+
+
+/*================== SEU CODIGO ===================*/
+
+main {
+    background-image: url(./Assets/home_cardapio.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 27rem;
+    display: flex;
+    flex-direction:row-reverse;
+}
+
+main h2 {
+    z-index: 1;
+    padding: 2rem;
+    background-color: white;
+    width: 35rem;
+    border-radius: 1.6rem;
+    text-align: center;
+    margin-top:16rem;
+    text-transform:uppercase;
+    font-size: 2.6rem;
+}
+
+section {
+    background-color: rgb(191, 202, 190);    
+}
+ 
+.comidas{
+    /*width: 25rem;
+    height: 25rem;
+    background-color: rgba(49, 25, 3, 0.8);
+    border-radius: 50%;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    margin-left: 8rem;
+    position: relative;*/
+
+    width: 25%;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    
+   
+}
+
+.comidas img{
+    width: 100%;
+    border-radius: 1.6rem;
+}
+
+.comidas h3, .comidas p{
+    text-align: center;
+    color: white;
+    font-size: 1.9rem;
+    
+}
+
+.comidas h3{
+    text-transform: uppercase;
+}
+
+.comidas p{
+    font-size: 1.5rem;
+    padding: 1.5rem;
+    
+}
+
+#div1{
+    display: flex;
+}
+
+#div2{
+    display: flex;
+}
+
+#div3{
+    display: flex;
+}
+
+.botao_pedidos{
+    width: 18rem;
+    height: 6rem;
+    background-color: #4D8764;
+    color:white;
+    text-transform: uppercase;
+    border-radius: 8rem;
+    border: none;
+    margin-left: 63.5rem;
+    margin-bottom: 8rem;
+    cursor: pointer;
+}
+
+
+
+/*============= FOOTER =============*/
+
+footer {
+    background-color: var(--cor-primaria);
+
+}
+
+#infoFooter {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+#lado-esquerdo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    gap: 3rem;
+
+    padding-top: 5.6rem;
+    padding-bottom: 2rem;
+    width: 50%;
+}
+
+#lado-direito {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    padding-top: 10rem;
+
+
+}
+
+#info-restaurante {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#info-restaurante div {
+    display: flex;
+    align-items: center;
+
+    color: var(--cor-texto);
+    gap: 3rem ;
+    
+}
+
+#info-restaurante p {
+    padding-right: 25rem;
+}
+
+
+#info-restaurante h3 {
+    font-size: 2.5rem;
+}
+
+.footer-info {
+    font-size: 2rem;
+    color: var(--cor-texto);
+}
+
+#atendimento {
+    display: flex;
+    gap: 5%;
+}
+
+#navegacao, #redes-sociais {
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+}
+
+#navegacao ul li a, #redes-sociais ul li a{
+    text-decoration: none;
+    color: var(--cor-texto);
+}
+
+#navegacao ul, #redes-sociais ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    list-style: none;
+}
+
+#redes-sociais {
+    padding-right: 25rem;
+}
+
+#redes-sociais ul {
+    display: flex;
+    justify-content: center;
+}
+
+#copyright {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1.6rem;
+
+    padding-inline: 10rem;
+    padding-block: 3rem;
+}
+
+#span-copy {
+    margin-inline: 3rem;
+}
