@@ -13,7 +13,8 @@
 
     --cor-primaria: #4cbc0d;
     --cor-secundaria: #28590b;
-    --cor-terceira: #ff2c2c;
+    --cor-terceira: #bf0a0a;
+    --cor-header: #6CBE83;
 
     --cor-texto: #FFFFFF;
 }
@@ -32,38 +33,27 @@ body {
 }
 
 
-/*#img-carrossel {
-    background-image: url(./assets/carrossel.svg);
+#img-carrossel-pc {
+    background-image: url(./assets/carrossel1.jpg);
     background-repeat: no-repeat;
     background-position: 50% 0%;
-    background-size: 85%;
     height: 75rem ;
-}*/
+    background-size: cover;
+}
 
 #carrossel {
-    padding-inline: 8%; 
     padding-top: 1rem;
 
 }
 
-#img-carrossel-pc {
-    border-radius: 5px;
-    width: 120rem;
-    height: 67.5rem;
-
-    overflow: hidden;
-
-    max-width: 100%;
 
 
-}
+
 
 #img-pc {
     display: flex;
 
     list-style: none;
-    width: 360rem;
-    height: 67.5rem;
 }
 
 #img-mobile {
@@ -80,15 +70,6 @@ body {
     border-radius: 10px;
 }
 
-@keyframes slide {
-        0%{left:0rem}
-        20%{left: 0rem}
-        30%{left: -120rem}
-        50%{left:-120rem}
-        60%{left:-240rem}
-        80%{left: -240rem}
-        100%{left: 0rem}
-    }
     
 
 #img-carrossel-pc img {
@@ -104,7 +85,7 @@ body {
     width: 100%;
     z-index: 2;
 
-    background-color: black;
+    background-color: var(--cor-header);
 }
 
 #cabecalho button {
@@ -114,7 +95,8 @@ body {
 }
 
 #carrossel  {
-    background: linear-gradient(to bottom, black 70%, black);   
+    background: whitesmoke;   
+    padding: 0;
 }
 
 header div {
@@ -129,7 +111,7 @@ header div {
 
 #loginImg {
     width: 100%;
-    background-color: white;
+    background-color: whitesmoke;
     border-radius: 3rem;
 }
 
@@ -168,7 +150,7 @@ header div {
     width: 90% ;
     height: 3.9rem;
 
-    background-color: var(--cor-primaria)  ;
+    background-color: rgba(40, 89, 11, 0.315) ;
     opacity: 70%;
     border-radius: .5rem;
     border: none;
@@ -188,7 +170,7 @@ nav .sidebar {
     width: 30rem;
     left: -30rem;
     height: 100vh;
-    background: linear-gradient(to top, var(--cor-primaria) 50%, var(--cor-secundaria) 100%);
+    background: rgba(24, 24, 24, 0.966);
     transition: all .5s ease;
     z-index: 1;
 }
@@ -196,7 +178,7 @@ nav .sidebar {
 nav .sidebar aside {
 
     font-size: 2.8rem;
-    color: white;
+    color: #cebd92;
     line-height: 7rem;
     text-align: center;
     user-select: none;
@@ -207,7 +189,7 @@ nav .sidebar a{
     align-items: center;
     height: 6.5rem;
     width: 100%;
-    color: white;
+    color: #d9560b;
     line-height: 6.5rem;
     transition: all .5s ease;
     border-bottom: .1rem solid ;
@@ -242,7 +224,7 @@ nav #check {
 nav label #btn,label #cancel {
     position: absolute;
     cursor: pointer;
-    color: var(--cor-primaria);
+    color: #d9560b;
     border-radius: .5rem;
     margin: 2rem 3rem;
     font-size: 2.8rem;
@@ -354,8 +336,7 @@ nav #check:checked ~ label #cancel{
 
 #cardapio {
     padding-top: 1.5rem;
-    background: black;
-    padding-bottom: 3rem;
+    background: whitesmoke;
 }
 
 
@@ -363,7 +344,7 @@ nav #check:checked ~ label #cancel{
 
     position: absolute;
     left: 100rem;
-    top: 80rem;
+    top: 90rem;
     padding-left: 5rem;
 
     max-width: 30rem;
@@ -372,7 +353,7 @@ nav #check:checked ~ label #cancel{
 #planta {
     position: absolute;
     left: 40rem;
-    top: 112rem;
+    top: 120rem;
     z-index: 1;
 }
 
@@ -380,7 +361,7 @@ nav #check:checked ~ label #cancel{
     position: absolute;
     z-index: 1;
 
-    top: 155rem;
+    top: 157rem;
     
 }
 
@@ -392,15 +373,14 @@ nav #check:checked ~ label #cancel{
     
     padding-left: 4.6rem;
 
-    color: white;
+    color: #d9560b;
 }
 .container {
-    background: linear-gradient(to top, black, var(--cor-terceira));
-    margin-inline: 5.1rem;
-    margin-bottom: 5.1rem;
+    background: linear-gradient(to bottom, black, var(--cor-terceira));
+
     border-radius: .5rem;
 
-    padding: 1rem;
+    padding: 2rem;
     border: 1px solid wheat;
 }
 
@@ -615,10 +595,10 @@ footer {
     display: flex;
     flex-direction: column;
     margin-left: 5%;
-    gap: 3rem;
+    gap: 2rem;
 
-    padding-top: 5.6rem;
-    padding-bottom: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 1.5rem;
     width: 50%;
 }
 
@@ -626,7 +606,7 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 50%;
-    padding-top: 10rem;
+    padding-top: 5rem;
 
 
 }
@@ -634,7 +614,7 @@ footer {
 #info-restaurante {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 #info-restaurante div {
@@ -642,7 +622,7 @@ footer {
     align-items: center;
 
     color: var(--cor-texto);
-    gap: 3rem ;
+    gap: 2rem ;
     
 }
 
@@ -652,11 +632,11 @@ footer {
 
 
 #info-restaurante h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .footer-info {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: var(--cor-texto);
 }
 
@@ -696,10 +676,10 @@ footer {
     display: flex;
     justify-content: space-between;
 
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 
-    padding-inline: 10rem;
-    padding-block: 3rem;
+    padding-inline: 8rem;
+    padding-block: 2rem;
 }
 
 #span-copy {
