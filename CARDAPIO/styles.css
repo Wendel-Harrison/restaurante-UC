@@ -343,8 +343,11 @@ section {
 #div1 div img, #div2 div img, #div3 div img, #div4 div img, #div5 div img{
     width: 15rem;
     height: 15rem;
+    
 
 }
+
+
 
 
 
@@ -357,7 +360,8 @@ section {
     background-color: #D9560B;
     color:white;
     text-transform: uppercase;
-    border-radius: 8rem;
+    border-radius: 1rem;
+    font-weight: 700;
     border: none;
     margin-left: 63.5rem;
     margin-bottom: 8rem;

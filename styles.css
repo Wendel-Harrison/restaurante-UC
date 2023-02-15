@@ -26,6 +26,8 @@ html {
     scroll-behavior: smooth;
 
    background-color: var(--cor-secundaria);
+
+   margin: auto;
 }
 
 body {
@@ -562,9 +564,9 @@ nav #check:checked ~ label #cancel{
 
 #sobre img {
     height: auto;
-    width: 50rem;
+    width: 55rem;
 
-    margin-right: 7rem;
+    margin-right: 6rem;
     margin-block: 10rem;
 }
 

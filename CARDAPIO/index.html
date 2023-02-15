@@ -14,6 +14,7 @@
 
 <script src="https://kit.fontawesome.com/f76e9142dc.js" crossorigin="anonymous"></script>
 
+
 <link rel="stylesheet" href="https://kit.fontawesome.com/f76e9142dc.css" crossorigin="anonymous">
 </head>
 <body>
@@ -25,6 +26,10 @@
         </label>
         <div class="sidebar">
             <aside>MENU</aside>
+            <a href="../index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Inicio</span>
+            </a>
             <a href="../LOGIN/index.html">
                 <i class="fa-solid fa-user"></i>
                 <span>Login</span>
@@ -42,11 +47,7 @@
                 <i class="fa-solid fa-comment-dots"></i>
                 <span>Feedbacks</span>
             </a>
-            <a href="../index.html">
-                <i class="fas fa-question-circle"></i>
-                <span>Sobre</span>
-            </a>
-            <a href="https://instagram.com">
+            <a href="https://instagram.com/welldnez">
                 <i class="fa-brands fa-instagram"></i>
                 <span>instagram</span> 
             </a>
@@ -88,7 +89,7 @@
     <section>
         <div id="div1">
         
-            <div class="comidas" id="aloha">
+            <div class="comidas comida" id="aloha">
             <img src="../pratos/logo_aloha.png" alt="">
                 <div>
                     <h3>Aloha</h3>
@@ -100,7 +101,7 @@
                 </div>
             </div>
 
-            <div class="comidas" id="mar">
+            <div class="comidas comida" id="mar">
                 <img src="../pratos/logo_ceviche.png" alt="">
                 <div>
                     <h3>Frutos do Mar</h3>
@@ -111,7 +112,7 @@
             </div>
         </div>
         <div id="div2">
-            <div class="comidas" id="ceviche">
+            <div class="comidas bebida" id="ceviche">
                 <img src="../pratos/logo_pennes.png" alt="">
                 <div>
                     <h3>Ceviche</h3>
@@ -121,7 +122,7 @@
                 </div>
             </div>
     
-            <div class="comidas" id="pirapuke">
+            <div class="comidas bebida" id="pirapuke">
                 <img src="../pratos/logo_hamburguer.png" alt="">
                 <div>
                     <h3>Pirapuke</h3>
@@ -133,7 +134,7 @@
         </div>
         
         <div id="div3">
-            <div class="comidas" id="oahu">
+            <div class="comidas sobremesa" id="oahu">
                 <img src="../pratos/logo_vinho.png" alt="">
                 <div>
                     <h3>Oahu</h3>
@@ -195,6 +196,11 @@
             Ver pedidos
            
         </button>
+
+        <button id="todos">todos</button>
+        <button id="comida">comida</button>
+        <button id="bebida">bebida</button>
+        <button id="sobremesa">sobremesa</button>
     </section>
 
     <footer>
@@ -203,11 +209,11 @@
                 <div id="info-restaurante" class="footer-info">
                     <div id="logoAndName">
                         <a href="../index.html">
-                            <img src="../assets/logo.png" alt="">
+                            <img src="../assets/logoGimp.png" alt="" id="logoImg">
 
                         </a>
     
-                        <h3>NOME RESTAURANTE</h3>
+                        <h3>WELLDNEZ FOOD</h3>
                     </div>
                     <p>Nosso restaurante está esperando por você, serviço e comida ao mais alto nível, porque você merece!</p>
                 </div>
@@ -228,22 +234,22 @@
                 <div id="navegacao" class="footer-info">
                     <h4>NAVEGAÇÃO:</h4>
                     <ul>
-                        <li><a href="">Início</a></li>
-                        <li><a href="">Cardápio</a></li>
-                        <li><a href="">Localização</a></li>
-                        <li><a href="">Feedback</a></li>
-                        <li><a href="">Login</a></li>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="./index.html">Cardápio</a></li>
+                        <li><a href="../LOCALIZAÇÃO/index.html">Localização</a></li>
+                        <li><a href="../FEEDBACKS/index.html">Feedback</a></li>
+                        <li><a href="../LOGIN/index.html">Login</a></li>
                     </ul>
                 </div>
     
                 <div id="redes-sociais" class="footer-info">
                     <h4>NOS SIGA EM:</h4>
                     <ul>
-                        <li><a href=""><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-                        <li><a href=""><i class="fa-brands fa-facebook"></i> Facebook</a></li>
-                        <li><a href=""><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-                        <li><a href=""><i class="fa-brands fa-youtube"></i> Youtube</a></li>
-                        <li><a href=""><i class="fa-brands fa-discord"></i> Discord</a></li>
+                        <li><a href="https://instagram.com/welldnez"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="htps://youtube.com"><i class="fa-brands fa-youtube"></i> Youtube</a></li>
+                        <li><a href="https://discord.com"><i class="fa-brands fa-discord"></i> Discord</a></li>
                     </ul>
                 </div>
             </div>
@@ -268,5 +274,7 @@
             
         </div>
     </footer>
+<script src="./main.js"></script>
+
 </body>
 </html>
