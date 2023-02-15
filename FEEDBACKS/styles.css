@@ -202,160 +202,74 @@ header {
 
 /*=======================================  1 =================================================*/
 
-#ellipse1 {
-    /* Ellipse 1 */
-
-    margin: 50px 200px 50px 80px;
-    padding: 0%;
-    width: 95px;
-    height: 95px;
-    
+main {
+    margin-top: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
 }
 
-#estrela1{
-    /* estrela 1*/
+section {
+    
 
-    margin: -20px -50px 50px 450px;
-    width: 154px;
-    height: 25.67px; 
+    font-size: 2rem;
+    display: flex;
+    width: 60rem;
+    gap: 3rem;
+    align-items: center;
+    margin-left: 2rem;
 }
 
-#texto1{
-    /* A minha experiência foi muito boa! Fui super bem atendido e a pizza estava deliciosa!! */
+#box2 {
+    margin-left: 60rem;
+}
 
-    margin: -138px -50px 50px 200px;
-    width: 480px;
-    height: 32px;
-   
+.estrelas {
+    margin-left: 45rem;
+}
 
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
+.divBtn {
+    width: 76rem;
+}
 
-    color: #000000;
+#textarea {
+    margin-top: 5rem;
+    width: 76rem;
+    height: 31rem;
+
+    font-size: 2.5rem;
+    padding: 2rem;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.7);
+    border: none;
+    text-decoration: none;
+    border-radius: 1rem;
 }
 
 
 
-/*======================================  2 ========================================================*/
-
-
-#ellipse2{
-    /* Ellipse 2 */
-
-    margin: 80px 0px 50px 750px;
-    width: 95px;
-    height: 95px;
-    
-
+.divBtn {
+    margin: auto;
 }
 
-#estrela2{
-    /* estrela 2 */
 
-    margin: -20px 0px 50px 1150px;
-    width: 151.67px;
-    height: 25.67px;
-    
-    
+#btn {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    margin-top: 1rem;
+    align-items: center;
 }
 
-#texto2{
-    /* Ambiente colorido arrumado, bom atendimento e pratos muito saborosos! */
- 
-   
-    width: 480px;
-    height: 32px;
-    margin: -128px 0px 50px 870px;
-    
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    
-    color: #000000;
- }
-
-
-/*====================================== 3 ========================================================*/
-
-#ellipse3{
-    /* Ellipse 3 */
-
-    margin: 50px 200px 50px 80px;
-    width: 95px;
-    height: 95px;
-   
+#btn img {
+    height: 2.6rem;
+    cursor: pointer;
 }
 
-#estrela3{
-    /* estrela 3*/
-
-    margin: -20px -50px 50px 450px;
-    width: 154px;
-    height: 25.67px;
-    
-    
-}
-
-#texto3{
-    /* Aqui encontrei não só um atendimento perfeito, mas, também comida limpinha, saudável e deliciosa! */
-    
-    
-    width: 480px;
-    height: 32px;
-    margin: -138px -50px 50px 200px;
-    
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 28px;
-    
-    color: #000000;
- }
-
-
- /*====================================== CAIXA FEEDBACK ========================================================*/
-
-#btn_enviar{
-
-    margin: -70px -50px 0px 1070px;
-    width: 98.67px;
-    height: 34.86px;
-    left: 964px;
-    top: 913px;
-    
-    background: #00694A;
-    border-radius: 100px;
-    
-
-}
-
-#cinco_estrelas{
-
-    margin:-35px -50px 50px 400px;
-    width: 302.61px;
-    height: 54.76px;
-    
-    
-
- }
-
-
-#textarea{
-
-    margin: 60px -50px 20px 400px;
-    width: 768px;
-    height: 314px;
-    color: #000000;
-    font-size: 30px;
-    
-    background: #FFFFFF
-    
+#btn_enviar {
+    padding: 1.5rem;
+    background-color: #00694A;
+    color: white;
+    border-radius: 1rem;
     
 }
 
