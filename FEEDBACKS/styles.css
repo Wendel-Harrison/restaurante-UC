@@ -124,6 +124,12 @@ nav #check:checked ~ label #cancel{
    
 }
 
+#logoImg {
+    width: 6rem;
+    margin: 0;
+    border-radius: 3rem;
+}
+
 /* ========== sidebar mobile ========*/
 
 @media(max-width: 800px){nav .sidebar{
