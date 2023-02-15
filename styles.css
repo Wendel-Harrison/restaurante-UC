@@ -34,7 +34,7 @@ body {
 
 
 #img-carrossel-pc {
-    background-image: url(./assets/carrossel1.jpg);
+    background-image: url(./assets/img-22.svg);
     background-repeat: no-repeat;
     background-position: 50% 0%;
     height: 75rem ;
@@ -128,8 +128,9 @@ header div {
 }
 
 #logoImg {
-    width: 100%;
+    width: 6rem;
     margin: 0;
+    border-radius: 3rem;
 }
 
 .logo {
@@ -609,6 +610,12 @@ footer {
     padding-top: 5rem;
 
 
+}
+
+#logoAndName img{
+    width: 6rem;
+    margin: 0;
+    border-radius: 3rem;
 }
 
 #info-restaurante {
