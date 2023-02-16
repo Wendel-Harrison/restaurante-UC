@@ -21,7 +21,7 @@
 
 html {
     height: 100%;
-    max-width: fit-content;
+    width: auto;
 
     scroll-behavior: smooth;
 
@@ -41,11 +41,37 @@ body {
     background-position: 50% 0%;
     height: 75rem ;
     background-size: cover;
+
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 #carrossel {
     padding-top: 1rem;
 
+}
+
+#box {
+    background-color: #df4103;
+    height: 40rem;
+    width: 40rem;
+    margin-top: 35rem;
+    margin-right: 5rem;
+
+    border-radius: 25rem;;
+}
+
+#box p {
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 10rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#box span {
+    color: var(--cor-header);
 }
 
 
@@ -131,7 +157,6 @@ header div {
 
 #logoImg {
     width: 6rem;
-    margin: 0;
     border-radius: 3rem;
 }
 
