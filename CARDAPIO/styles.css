@@ -277,6 +277,30 @@ main h2 {
     font-size: 2.6rem;
 }
 
+.Btncomidas{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 1rem;
+    
+}
+
+.Btncomidas button{
+    padding: 2rem;
+    margin-inline: 0.8rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #D9560B;
+    color: whitesmoke;
+    text-transform: uppercase;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.Btncomidas button:active, .botao_pedidos:active{
+    background-color: #d16d32;
+    transform: translateY(4px);   
+}
 section {
     background-color: whitesmoke;
 }
