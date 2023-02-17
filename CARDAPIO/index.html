@@ -14,6 +14,7 @@
 
 <script src="https://kit.fontawesome.com/f76e9142dc.js" crossorigin="anonymous"></script>
 
+
 <link rel="stylesheet" href="https://kit.fontawesome.com/f76e9142dc.css" crossorigin="anonymous">
 </head>
 <body>
@@ -25,28 +26,28 @@
         </label>
         <div class="sidebar">
             <aside>MENU</aside>
-            <a href="#">
+            <a href="../index.html">
+                <i class="fa-solid fa-house"></i>
+                <span>Inicio</span>
+            </a>
+            <a href="../LOGIN/index.html">
                 <i class="fa-solid fa-user"></i>
                 <span>Login</span>
             </a>
     
-            <a href="#">
+            <a href="../CARDAPIO/index.html">
                 <i class="fa-solid fa-bowl-food"></i>
                 <span>cardapio</span>
             </a>
-            <a href="#">
+            <a href="../LOCALIZAÇÃO/index.html">
                 <i class="fa-solid fa-street-view"></i>
                 <span>Localização</span>
             </a>
-            <a href="#">
+            <a href="../FEEDBACKS/index.html">
                 <i class="fa-solid fa-comment-dots"></i>
                 <span>Feedbacks</span>
             </a>
-            <a href="#">
-                <i class="fas fa-question-circle"></i>
-                <span>Sobre</span>
-            </a>
-            <a href="#">
+            <a href="https://instagram.com/welldnez">
                 <i class="fa-brands fa-instagram"></i>
                 <span>instagram</span> 
             </a>
@@ -55,18 +56,18 @@
     </nav>
 
     <header id="cabecalho"> 
-        <button id="login-btn">
-            <img src="./assets/loginIcon.svg" alt="" id="loginImg">
-        </button>            
+        <a href="../LOGIN/index.html" id="login-btn">
+            <img src="../assets/loginIcon.svg" alt="" id="loginImg">
+        </a>            
 
-        <a href="#" class="logo">
-            <img src="./assets/logo_novo.png" alt="" id="logoImg">
+        <a href="../index.html" class="logo">
+            <img src="../assets/logoGimp.png" alt="" id="logoImg">
         </a>
         <div class="inputAndButton">
             <input type="text" placeholder="buscar..." id="pesquisa" >
             
             <button id="pesquisa-btn">
-                <img src="./assets/lupa.svg" alt="" id="lupaImg">
+                <img src="../assets/lupa.svg" alt="" id="lupaImg">
             </button>
 
         </div>
@@ -86,91 +87,174 @@
     </main>
 
     <section>
+        <div class="Btncomidas">
+            <button id="todos">todos</button>
+            <button id="comida">comida</button>
+            <button id="bebida">bebida</button>
+            <button id="sobremesa">sobremesa</button>
+        </div>
         <div id="div1">
-        <div class="comidas" id="aloha">
-            <img src="Assets/aloha.png" alt="">
-            <div>
-                <h3>Aloha</h3>
-                <p>ALOHA
+        
+            <div class="comidas comida" id="comercial">
+                <img src="../pratos/logo_comercial.png" alt="">
+                <div>
+                    <h3>Prato Comercial</h3>
+                    <p>Arroz, Feijão, Carne, Salada de tomate e Pure de Batata!</p>
+                    <hr>
+                    <span>R$ 20,00</span>
+                </div>
+            </div>
 
-                    Salmão, arroz japonês temperado (shari), manga, sunomono, cenoura, castanha de caju caramelizada com gergelim, crisp de couve e tempurá de legumes.</p>
+            <div class="comidas comida" id="ceviche">
+                <img src="../pratos/logo_ceviche.png" alt="">
+                <div>
+                    <h3>Ceviche à moda da casa</h3>
+                    <p>Botão de lula e camarão grelhado, arroz japonês temperado (shari), kani, sunomono, crisp de couve, dadinho de salmão, cream cheese, nori, biscoito de arroz e algas.</p>
+                    <hr>
+                    <span>R$ 15,00</span>
+                </div>
             </div>
         </div>
-
-        <div class="comidas" id="mar">
-            <img src="Assets/frutos_do_mar.png" alt="">
-            <div>
-                <h3>Frutos do Mar</h3>
-                <p>Botão de lula e camarão grelhado, arroz japonês temperado (shari), kani, sunomono, crisp de couve, dadinho de salmão, cream cheese, nori, biscoito de arroz e algas.</p>
+        <div id="div2">
+            <div class="comidas comida" id="penne">
+                <img src="../pratos/logo_pennes.png" alt="">
+                <div>
+                    <h3>Penne Rigatte com shimeji</h3>
+                    <p>Penne ao molho branco com leite de coco, temperos da casa, shimeji e shoyu.</p>
+                    <hr>
+                    <span>R$ 40,00</span>
+                </div>
+            </div>
+    
+            <div class="comidas comida" id="pirapuke">
+                <img src="../pratos/logo_pirapuke.png" alt="">
+                <div>
+                    <h3>Pirapuke</h3>
+                    <p>Pirarucu temperado e grelhado, flor de jambú, arroz japonês temperado (shari), crisp de couve, tomate sweet grape, manga, cenoura, castanha de caju caramelizada e chips de banana da terra.</p>
+                    <hr>
+                    <span>R$ 33,00</span>
+                </div>
             </div>
         </div>
-
-        <div class="comidas" id="ceviche">
-            <img src="Assets/ceviche.png" alt="">
-            <div>
-                <h3>Ceviche</h3>
-                <p>Ceviche de peixe branco com camarão, arroz japonês temperado (shari), abacate, cenoura, sunomono, manga, tomate cereja temperado e biscoito de arroz e algas</p>
+        
+        <div id="div3">
+            <div class="comidas comida" id="aloha">
+                <img src="../pratos/logo_aloha.png" alt="">
+                <div>
+                    <h3>Aloha</h3>
+                    <p>Salmão e shimeji, arroz japonês temperado (shari), cream cheese, kani, cenoura, amendoim, crisp de couve e chips de batata doce</p>
+                    <hr>
+                    <span>R$ 35.00</span>
+                </div>
             </div>
-        </div>
-    </div>
 
-            <div id="div2"> 
-        <div class="comidas" id="pirapuke">
-            <img src="Assets/Pirarupoke.png" alt="">
-            <div>
-                <h3>Pirapuke</h3>
-                <p>Pirarucu temperado e grelhado, flor de jambú, arroz japonês temperado (shari), crisp de couve, tomate sweet grape, manga, cenoura, castanha de caju caramelizada e chips de banana da terra.</p>
-            </div>
-        </div>
-
-        <div class="comidas" id="oahu">
-            <img src="Assets/oahu.png" alt="">
-            <div>
-                <h3>Oahu</h3>
-                <p>Salmão e shimeji, arroz japonês temperado (shari), cream cheese, kani, cenoura, amendoim, crisp de couve e chips de batata doce</p>
-            </div>
-        </div>
-
-        <div class="comidas" id="carb">
-            <img src="Assets/low_carb.png" alt="">
-            <div>
-                <h3>Low Carb</h3>
-                <p>
-                    Salmão, escolha a base (mix de folhas, espaguete de abobrinha ou quinoa), abacate, tomate sweet grape. amendoim, edamame, crisp de couve e nori.</p>
-            </div>
-        </div>
-    </div>
-            <div id="div3">
-        <div class="comidas" id="coxinha">
-            <img src="Assets/coxinha.png" alt="">
-            <div>
-                <h3>Coxinha Vegana</h3>
-                <p>Coxinha Vegana feita de abobrinha, leite de coco e farinha de mandioca.</p>
-            </div>
-        </div>
-
-        <div class="comidas" id="brigadeiro">
-            <img src="Assets/brigadeiro.png" alt="">
-            <div>
-                <h3>Brigadeiro de Banana</h3>
-                <p>
-                    Brigadeiro vegano de banana,
-                    cacau, biomassa de banana, açucar mascavo e óleo de coco.</p>
+            <div class="comidas comida" id="salada">
+                <img src="../pratos/logo_salada.png" alt="">
+                <div>
+                    <h3>Salada</h3>
+                    <p>
+                        Salada de tomate, alface, rúcula, beterraba, pepino ou repolho.</p>
+                        <hr>
+                    <span>R$ 10,00</span>
+                </div>
             </div>
         </div>
 
-        <div class="comidas" id="pennes">
-            <img src="Assets/pennes.png" alt="">
-            <div>
-                <h3>Penne Rigatte com shimeji</h3>
-                <p>Penne ao molho branco com leite de coco, temperos da casa, shimeji e shoyu.</p>
+        <div id="div4">
+            <div class="comidas bebida" id="agua">
+                <img src="../pratos/logo_agua.png" alt="">
+                <div>
+                    <h3>Água Mineral</h3>
+                    <p>Água mineral sem gás ou com gás. </p>
+                    <hr>
+                    <span>R$ 2,00</span>
+                </div>
+            </div>
+
+            <div class="comidas bebida" id="vinho">
+                <img src="../pratos/logo_vinho.png" alt="">
+                <div>
+                    <h3>Taça de Vinho</h3>
+                    <p>
+                        Vinhos tinto, seco ou suave, rosé, espumante, licoroso.</p>
+                        <hr>
+                    <span>R$ 30,00</span>
+                </div>
             </div>
         </div>
-    </div>
+
+        <div id="div5">
+            <div class="comidas bebida" id="refrigerante">
+                <img src="../pratos/logo_coca.png" alt="">
+                <div>
+                    <h3>Refrigerante Diet</h3>
+                    <p>Refrigerantes com menos açucar, servido com gelo e limão. </p>
+                    <hr>
+                    <span>R$ 4,00</span>
+                </div>
+            </div>
+
+            <div class="comidas bebida" id="sucos">
+                <img src="../pratos/logo_suco.png" alt="">
+                <div>
+                    <h3>Sucos Naturais</h3>
+                    <p>Escolha suas fruta e peça seu suco natural.</p>
+                    <hr>
+                    <span>R$ 8,00</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="div6">
+            <div class="comidas sobremesa" id="brownie">
+                <img src="../pratos/logo_brownie.png" alt="">
+                <div>
+                    <h3>Brownie Fit</h3>
+                    <p>Brownie fit, chocolate meio amargo picado, aveia, cacau em pó, óleo de coco.</p>
+                    <hr>
+                    <span>R$ 25,00</span>
+                </div>
+            </div>
+
+            <div class="comidas sobremesa" id="gelatina">
+                <img src="../pratos/logo_gelatina.png" alt="">
+                <div>
+                    <h3>Gelatina de Frutas</h3>
+                    <p>Gelatina de Frutas: gelatina incolor, morangos, uvas sem sementes, manga, maçã, entre outras.</p>
+                    <hr>
+                    <span>R$ 10,00</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="div7">
+            <div class="comidas sobremesa" id="frutas">
+                <img src="../pratos/logo_frutas.png" alt="">
+                <div>
+                    <h3>Salada de Frutas</h3>
+                    <p>Salada de frutas: morangos, uvas sem sementes, manga, maçã, entre outras.</p> 
+                    <hr>
+                    <span>R$ 25,00</span>
+                </div>
+            </div>
+
+            <div class="comidas sobremesa" id="melancia">
+                <img src="../pratos/logo_melancia.png" alt="">
+                <div>
+                    <h3>Frutas</h3>
+                    <p>Morangos, manga, maçã, melancia, entre outras.</p>
+                    <hr>
+                    <span>R$ 5,00</span>
+                </div>
+            </div>
+        </div>
+
         <button class="botao_pedidos">
             Ver pedidos
            
         </button>
+
+        
     </section>
 
     <footer>
@@ -178,9 +262,12 @@
             <div id="lado-esquerdo">
                 <div id="info-restaurante" class="footer-info">
                     <div id="logoAndName">
-                        <img src="./assets/logo_novo.png" alt="">
+                        <a href="../index.html">
+                            <img src="../assets/logoGimp.png" alt="" id="logoImg">
+
+                        </a>
     
-                        <h3>NOME RESTAURANTE</h3>
+                        <h3>WELLDNEZ FOOD</h3>
                     </div>
                     <p>Nosso restaurante está esperando por você, serviço e comida ao mais alto nível, porque você merece!</p>
                 </div>
@@ -201,22 +288,22 @@
                 <div id="navegacao" class="footer-info">
                     <h4>NAVEGAÇÃO:</h4>
                     <ul>
-                        <li><a href="">Início</a></li>
-                        <li><a href="">Cardápio</a></li>
-                        <li><a href="">Localização</a></li>
-                        <li><a href="">Feedback</a></li>
-                        <li><a href="">Login</a></li>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="./index.html">Cardápio</a></li>
+                        <li><a href="../LOCALIZAÇÃO/index.html">Localização</a></li>
+                        <li><a href="../FEEDBACKS/index.html">Feedback</a></li>
+                        <li><a href="../LOGIN/index.html">Login</a></li>
                     </ul>
                 </div>
     
                 <div id="redes-sociais" class="footer-info">
                     <h4>NOS SIGA EM:</h4>
                     <ul>
-                        <li><a href=""><i class="fa-brands fa-instagram"></i> Instagram</a></li>
-                        <li><a href=""><i class="fa-brands fa-facebook"></i> Facebook</a></li>
-                        <li><a href=""><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
-                        <li><a href=""><i class="fa-brands fa-youtube"></i> Youtube</a></li>
-                        <li><a href=""><i class="fa-brands fa-discord"></i> Discord</a></li>
+                        <li><a href="https://instagram.com/welldnez"><i class="fa-brands fa-instagram"></i> Instagram</a></li>
+                        <li><a href="https://facebook.com"><i class="fa-brands fa-facebook"></i> Facebook</a></li>
+                        <li><a href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i> LinkedIn</a></li>
+                        <li><a href="htps://youtube.com"><i class="fa-brands fa-youtube"></i> Youtube</a></li>
+                        <li><a href="https://discord.com"><i class="fa-brands fa-discord"></i> Discord</a></li>
                     </ul>
                 </div>
             </div>
@@ -241,5 +328,7 @@
             
         </div>
     </footer>
+<script src="./main.js"></script>
+
 </body>
 </html>

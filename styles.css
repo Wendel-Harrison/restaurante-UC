@@ -11,59 +11,73 @@
 :root {
     font-size: 62.5%; /* 1rem = 10px */
 
-    --cor-primaria: #4D8764;
-    --cor-secundaria: #6CBE83;
+    --cor-primaria: #4cbc0d;
+    --cor-secundaria: #28590b;
+    --cor-terceira: #bf0a0a;
+    --cor-header: #6CBE83;
 
     --cor-texto: #FFFFFF;
 }
 
 html {
-    height: 100%;
-    max-width: fit-content;
-
     scroll-behavior: smooth;
-
    background-color: var(--cor-secundaria);
-
 }
 
 body {
     overflow: overlay;
 }
 
+#fundo {
+    position: relative;
+    margin: auto;
+}
 
-/*#img-carrossel {
-    background-image: url(./assets/carrossel.svg);
+
+#img-carrossel-pc {
+    background-image: url(./assets/foto_carrousel2.png);
     background-repeat: no-repeat;
     background-position: 50% 0%;
-    background-size: 85%;
     height: 75rem ;
-}*/
+    background-size: cover;
+
+    display: flex;
+    flex-direction: row-reverse;
+}
 
 #carrossel {
-    padding-inline: 8%; 
     padding-top: 1rem;
 
 }
 
-#img-carrossel-pc {
-    border-radius: 30px;
-    width: 120rem;
-    height: 67.5rem;
+#box {
+    background-color: #df4103;
+    height: 36rem;
+    width: 36rem;
+    margin-top: 35rem;
+    margin-right: 10rem;
 
-    overflow: hidden;
+    border-radius: 20rem;;
+}
 
-    max-width: 100%;
+#box p {
+    color: white;
+    text-align: center;
+    font-size: 2.4rem;
+    margin-top: 8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 2rem;
+}
 
-
+#box span {
+    color: var(--cor-header);
 }
 
 #img-pc {
     display: flex;
 
     list-style: none;
-    width: 360rem;
-    height: 67.5rem;
 }
 
 #img-mobile {
@@ -77,18 +91,9 @@ body {
 }
 
 #img-carrossel-pc li img {
-    border-radius: 30px;
+    border-radius: 10px;
 }
 
-@keyframes slide {
-        0%{left:0rem}
-        20%{left: 0rem}
-        30%{left: -120rem}
-        50%{left:-120rem}
-        60%{left:-240rem}
-        80%{left: -240rem}
-        100%{left: 0rem}
-    }
     
 
 #img-carrossel-pc img {
@@ -103,6 +108,8 @@ body {
 
     width: 100%;
     z-index: 2;
+
+    background-color: var(--cor-header);
 }
 
 #cabecalho button {
@@ -111,8 +118,9 @@ body {
     cursor: pointer;
 }
 
-#cabecalho, #carrossel {
-    background-color: var(--cor-secundaria);
+#carrossel  {
+    background: whitesmoke;   
+    padding: 0;
 }
 
 header div {
@@ -127,12 +135,15 @@ header div {
 
 #loginImg {
     width: 100%;
+    background-color: whitesmoke;
+    border-radius: 3rem;
 }
 
 #loginImg:hover {
-    background-color: var(--cor-texto);
+    background-color: var(--cor-primaria);
     border-radius: 30px;
-    transition: 0.1s;
+    transition: 0.5s;
+    
 }
 
 #pesquisa-btn {
@@ -141,16 +152,16 @@ header div {
 }
 
 #logoImg {
-    width: 85%;
-    margin: 0;
+    width: 6rem;
+    border-radius: 3rem;
 }
 
 .logo {
-    margin-left: 40%;
+    margin-left: 37%;
 }
 
 .inputAndButton {
-    margin-left: 25%;
+    margin-left: 27%;
 }
 
 #pesquisa::placeholder {
@@ -163,9 +174,9 @@ header div {
     width: 90% ;
     height: 3.9rem;
 
-    background-color: var(--cor-primaria)  ;
+    background-color: rgba(40, 89, 11, 0.315) ;
     opacity: 70%;
-    border-radius: 3rem;
+    border-radius: .5rem;
     border: none;
 
     
@@ -183,7 +194,7 @@ nav .sidebar {
     width: 30rem;
     left: -30rem;
     height: 100vh;
-    background: linear-gradient(to top, var(--cor-primaria) 50%, var(--cor-secundaria) 100%);;
+    background: rgba(24, 24, 24, 0.966);
     transition: all .5s ease;
     z-index: 1;
 }
@@ -191,28 +202,28 @@ nav .sidebar {
 nav .sidebar aside {
 
     font-size: 2.8rem;
-    color: white;
+    color: #cebd92;
     line-height: 7rem;
     text-align: center;
     user-select: none;
 }
 
-nav .sidebar a{
+.aMenu{
     display: flex;
     align-items: center;
     height: 6.5rem;
     width: 100%;
-    color: white;
+    color: #d9560b;
     line-height: 6.5rem;
-    transition: all .5s ease;
-    border-bottom: .1rem solid var(--cor-primaria);
+    transition: all .3s ease;
+    border-bottom: .1rem solid ;
     border-top: .1rem solid rgba(255, 255, 255, .1);
     border-left: .5rem solid transparent;
 }
 
-nav a.active,a:hover {
-    border-left: .5rem solid #a2ff56;
-    color: #a2ff56;
+.aMenu:active, .aMenu:hover {
+    border-left: .5rem solid var(--cor-primaria);
+    color: #daf82f;
 }
 
 nav .sidebar a i {
@@ -233,10 +244,11 @@ nav #check {
 
 }
 
+
 nav label #btn,label #cancel {
     position: absolute;
     cursor: pointer;
-    color: var(--cor-secundaria);
+    color: #d9560b;
     border-radius: .5rem;
     margin: 2rem 3rem;
     font-size: 2.8rem;
@@ -244,7 +256,7 @@ nav label #btn,label #cancel {
     width: 5rem;
     transition: all .5s ease;
 
-    border: .1rem solid #262626 ;
+    border: .1rem solid  ;
     background: #262626;
     text-align: center;
     line-height: 5rem;
@@ -346,10 +358,10 @@ nav #check:checked ~ label #cancel{
     justify-content: space-between;
 }
 
+
+
 #cardapio {
-    padding-top: 1.5rem;
-    background: linear-gradient(to top, var(--cor-primaria) 50%, var(--cor-secundaria) 100%);
-    padding-bottom: 3rem;
+    background: whitesmoke;
 }
 
 
@@ -357,7 +369,7 @@ nav #check:checked ~ label #cancel{
 
     position: absolute;
     left: 100rem;
-    top: 80rem;
+    top: 90rem;
     padding-left: 5rem;
 
     max-width: 30rem;
@@ -366,7 +378,7 @@ nav #check:checked ~ label #cancel{
 #planta {
     position: absolute;
     left: 40rem;
-    top: 112rem;
+    top: 120rem;
     z-index: 1;
 }
 
@@ -374,41 +386,45 @@ nav #check:checked ~ label #cancel{
     position: absolute;
     z-index: 1;
 
-    top: 155rem;
+    top: 157rem;
     
 }
 
 #cardapio h2 {
     font-family: 'dancing script', sans;
-    font-size: 6.5rem;
+    font-size: 7.5rem;
     font-weight: 400;
     line-height: 12.4rem;
     
     padding-left: 4.6rem;
+
+    color: #d9560b;
 }
 .container {
-    background-color: #DBE5DE;
-    margin-inline: 5.1rem;
-    margin-bottom: 5.1rem;
+    background: linear-gradient(to bottom, #51e71557, #ffc400);
+
     border-radius: .5rem;
 
-    padding: 1rem;
+    padding: 2rem;
+    border: 1px solid wheat;
 }
 
 
 .prato {
     display: flex;
 
-    background-color: var(--cor-primaria);
+    background-color: #ff724f;
     opacity: 90%;
-    width: 57.2rem;
+    width: 65rem;
     height: 19.5rem;
 
-    border-radius: 3rem;
+    border-radius: 1rem;
 
     color: var(--cor-texto);
 
     align-items: center;
+
+    border: 1px solid wheat;
 }
 
 .prato img {
@@ -416,7 +432,7 @@ nav #check:checked ~ label #cancel{
     height: 14rem;
     margin: 2.7rem 2.5rem;
 
-    border-radius: 3rem;
+    border-radius: 1rem;
 }
 
 .prato div {
@@ -426,12 +442,12 @@ nav #check:checked ~ label #cancel{
 }
 
 .prato h3 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
 .prato p {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: 400;
 }
 
@@ -451,21 +467,24 @@ nav #check:checked ~ label #cancel{
 
 .pratos {
     display: flex;
-    background-color: var(--cor-primaria);
-    opacity: 90%;
+    background-color: #ff724f;
     margin-top: 3.9rem;
     margin-inline: 7.5rem;
-    border-radius: 3rem;
+    border-radius: 1rem;
     align-items: center;
+    text-transform: uppercase;
+    
 
     justify-content: space-between;
 
     padding: 3% 0% 3% 3%;
+
+    border: 1px solid wheat;
 }
 
 .pratos h3 {
     font-size: 3.5rem;
-    font-weight: 400;
+    font-weight: 700;
     color: var(--cor-texto);
     margin-left: 12%;
 }
@@ -491,17 +510,17 @@ nav #check:checked ~ label #cancel{
 }
 
 #imagem-ovo {
-    background-image: url(./assets/ovo.jpeg);
+    background-image: url(./assets/carrossel1\ \(1\).jpg);
     background-position: 50% 20%;
     height: 100%;
-    width: 100%;
+    background-size: cover;
     background-repeat: no-repeat;
 
 }
 
 #bloco-preto {
     background-color: black;
-    opacity: 80%;
+    opacity: 90%;
     height: 100%;
     max-width: 40.5rem;
     position: relative;
@@ -510,36 +529,98 @@ nav #check:checked ~ label #cancel{
 }
 
 #bloco-preto p {
-    padding-top: 10rem;
+    padding-top: 8rem;
     padding-inline: 2rem;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+    font-weight: 700;
 
 }
 
 .span2 {
-    margin-left: 6rem;
 }
 
 #span3 {
     font-weight: bold;
     font-size: 2.5rem;
+    
 }
 
 #localizacao a {
     border: none;
-    background: none;
     color: var(--cor-secundaria);
 
-    font-size: 2.7rem;
+    font-size: 2rem;
     margin-left: 15.5rem;
     margin-top: 1rem;
     cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    background-color: #cebd92 ;
+    padding: 1rem;
+    border-radius: .5rem;
+
+    color: #000;
+}
+
+/* ======= SOBRE ========= */
+
+#sobre {
+    background-color: rgba(41, 71, 41, 0.863);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#sobre div {
+    font-size: 2.3rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 72rem;
+    align-items: center;
+    margin-left: 6rem;
+
+}
+
+#sobre div h3 {
+    color: #cebd92;
+    text-align: center;
+    
+}
+
+#sobre div h4 {
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+#sobre img {
+    height: auto;
+    width: 53rem;
+
+    margin-right: 6rem;
+    margin-block: 10rem;
+}
+
+#sobre a {
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    padding: 1rem 2rem;
+    background-color: #cebd92;
+    width: fit-content;
+    border-radius: .2rem;
+    box-shadow: 2px 3px 4px  rgba(0, 0, 0, 0.7);
 }
 
 /*============= FOOTER =============*/
 
 footer {
-    background-color: var(--cor-primaria);
+    background-color: var(--cor-secundaria);
 
 }
 
@@ -555,10 +636,10 @@ footer {
     display: flex;
     flex-direction: column;
     margin-left: 5%;
-    gap: 3rem;
+    gap: 2rem;
 
-    padding-top: 5.6rem;
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
     width: 50%;
 }
 
@@ -566,15 +647,21 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 50%;
-    padding-top: 10rem;
+    padding-top: 5rem;
 
 
+}
+
+#logoAndName img{
+    width: 6rem;
+    margin: 0;
+    border-radius: 3rem;
 }
 
 #info-restaurante {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 #info-restaurante div {
@@ -582,7 +669,7 @@ footer {
     align-items: center;
 
     color: var(--cor-texto);
-    gap: 3rem ;
+    gap: 2rem ;
     
 }
 
@@ -592,11 +679,11 @@ footer {
 
 
 #info-restaurante h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .footer-info {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--cor-texto);
 }
 
@@ -636,10 +723,10 @@ footer {
     display: flex;
     justify-content: space-between;
 
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 
-    padding-inline: 10rem;
-    padding-block: 3rem;
+    padding-inline: 8rem;
+    padding-block: 2rem;
 }
 
 #span-copy {
