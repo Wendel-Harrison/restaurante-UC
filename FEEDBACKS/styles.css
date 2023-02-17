@@ -13,8 +13,11 @@
 
     --cor-primaria: #4D8764;
     --cor-secundaria: #6CBE83;
+    --cor-header: #6CBE83;
 
-    --cor-texto: #FFFFFF;
+    
+
+    --cor-texto: #ED7B05;
 }
 
 html {
@@ -23,7 +26,7 @@ html {
 
     scroll-behavior: smooth;
 
-    background-color: #D9D9D9;
+   background-color: whitesmoke;
 
 }
 
@@ -31,6 +34,99 @@ body {
     overflow: overlay;
 }
 
+#fundo {
+    position: relative;
+    margin: auto;
+}
+
+
+
+#cabecalho {
+    display: flex;
+    align-items: center;
+
+    padding: 1% 0% 0% 7%;
+
+    width: 100%;
+    z-index: 2;
+
+    background-color: var(--cor-header);
+}
+
+#cabecalho button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#carrossel  {
+    background: whitesmoke;   
+    padding: 0;
+}
+
+header div {
+    padding-left: 2rem;
+    display: flex; 
+    gap: 3rem; 
+}
+
+#menuImg {
+    width: 100%;
+}
+
+#loginImg {
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 3rem;
+}
+
+#loginImg:hover {
+    background-color: var(--cor-primaria);
+    border-radius: 30px;
+    transition: 0.5s;
+    
+}
+
+#pesquisa-btn {
+    position: relative;
+    right: 85%;
+}
+
+#logoImg {
+    width: 6rem;
+    border-radius: 3rem;
+}
+
+.logo {
+    margin-left: 37%;
+}
+
+.inputAndButton {
+    margin-left: 27%;
+}
+
+#pesquisa::placeholder {
+    color: black;
+}
+
+#pesquisa {
+
+
+    width: 90% ;
+    height: 3.9rem;
+
+    background-color: rgba(40, 89, 11, 0.315) ;
+    opacity: 70%;
+    border-radius: .5rem;
+    border: none;
+
+    
+
+    padding-left: 17%;
+    font-size: 2rem;
+    color: var(--cor-texto);
+    font-weight: 700;
+}
 
 /*===== Menu sidebar ========*/
 
@@ -39,7 +135,7 @@ nav .sidebar {
     width: 30rem;
     left: -30rem;
     height: 100vh;
-    background: linear-gradient(to top, var(--cor-primaria) 50%, var(--cor-secundaria) 100%);;
+    background: rgba(24, 24, 24, 0.966);
     transition: all .5s ease;
     z-index: 1;
 }
@@ -47,28 +143,28 @@ nav .sidebar {
 nav .sidebar aside {
 
     font-size: 2.8rem;
-    color: white;
+    color: #cebd92;
     line-height: 7rem;
     text-align: center;
     user-select: none;
 }
 
-nav .sidebar a{
+.aMenu{
     display: flex;
     align-items: center;
     height: 6.5rem;
     width: 100%;
-    color: white;
+    color: #d9560b;
     line-height: 6.5rem;
-    transition: all .5s ease;
-    border-bottom: .1rem solid var(--cor-primaria);
+    transition: all .3s ease;
+    border-bottom: .1rem solid ;
     border-top: .1rem solid rgba(255, 255, 255, .1);
     border-left: .5rem solid transparent;
 }
 
-nav a.active,a:hover {
-    border-left: .5rem solid #a2ff56;
-    color: #a2ff56;
+.aMenu:active, .aMenu:hover {
+    border-left: .5rem solid var(--cor-primaria);
+    color: #daf82f;
 }
 
 nav .sidebar a i {
@@ -89,18 +185,19 @@ nav #check {
 
 }
 
+
 nav label #btn,label #cancel {
     position: absolute;
     cursor: pointer;
-    color: var(--cor-secundaria);
+    color: #d9560b;
     border-radius: .5rem;
-    margin: 2rem 3rem;
+    margin: 2rem 2rem;
     font-size: 2.8rem;
     height: 5rem;
     width: 5rem;
     transition: all .5s ease;
 
-    border: .1rem solid #262626 ;
+    border: .1rem solid  ;
     background: #262626;
     text-align: center;
     line-height: 5rem;
@@ -122,81 +219,6 @@ nav #check:checked ~ label #cancel{
     opacity: 1;
     visibility: visible;
    
-}
-
-#logoImg {
-    width: 6rem;
-    margin: 0;
-    border-radius: 3rem;
-}
-
-/* ========== sidebar mobile ========*/
-
-@media(max-width: 800px){nav .sidebar{
-    opacity: 0;
-    visibility: hidden;
-    height: auto;
-    width: 6rem;
-    left: 0;
-    margin: 7rem 0;
-    }
-
-    nav #btn {
-        position: fixed;
-        left: -2.5rem;
-    }
-
-    #cancel {
-        position: fixed;
-    }
-
-    nav #check:checked ~ label #cancel{
-        margin-top: 2rem;
-        margin-left: 0.5rem;
-    }
-
-    nav #check:checked ~ label #btn {
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    nav #check:checked ~ .sidebar {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    nav aside{
-        display: none;
-    }
-
-    nav span {
-        position: absolute;
-        margin-left: 2.3rem;
-        opacity: 0;
-        visibility: hidden;
-    }
-
-    nav .sidebar a{
-        height: 6rem;
-    }
-
-    nav .sidebar a i {
-        margin-left: 1px;
-        padding-left: 1rem;
-    }
-
-    nav a:hover {
-        width: 20rem;
-        background: inherit;
-        border-bottom-right-radius: 30px;
-    }
-
-    nav .sidebar a:hover span {
-        opacity: 1;
-        visibility: visible;
-        margin-left: 5rem;
-    }
-
 }
 
 /* SEU CODIGO AQUI */

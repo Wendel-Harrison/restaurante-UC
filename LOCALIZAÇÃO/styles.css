@@ -13,6 +13,8 @@
 
     --cor-primaria: #4D8764;
     --cor-secundaria: #6CBE83;
+    --cor-header: #6CBE83;
+
     
 
     --cor-texto: #ED7B05;
@@ -32,6 +34,13 @@ body {
     overflow: overlay;
 }
 
+#fundo {
+    position: relative;
+    margin: auto;
+}
+
+
+
 #cabecalho {
     display: flex;
     align-items: center;
@@ -40,6 +49,8 @@ body {
 
     width: 100%;
     z-index: 2;
+
+    background-color: var(--cor-header);
 }
 
 #cabecalho button {
@@ -48,8 +59,9 @@ body {
     cursor: pointer;
 }
 
-#cabecalho {
-    background-color: var(--cor-secundaria);
+#carrossel  {
+    background: whitesmoke;   
+    padding: 0;
 }
 
 header div {
@@ -64,12 +76,15 @@ header div {
 
 #loginImg {
     width: 100%;
+    background-color: whitesmoke;
+    border-radius: 3rem;
 }
 
 #loginImg:hover {
-    background-color: white;
+    background-color: var(--cor-primaria);
     border-radius: 30px;
-    transition: 0.1s;
+    transition: 0.5s;
+    
 }
 
 #pesquisa-btn {
@@ -78,16 +93,16 @@ header div {
 }
 
 #logoImg {
-    width: 100%;
-    margin: 0;
+    width: 6rem;
+    border-radius: 3rem;
 }
 
 .logo {
-    margin-left: 40%;
+    margin-left: 37%;
 }
 
 .inputAndButton {
-    margin-left: 25%;
+    margin-left: 27%;
 }
 
 #pesquisa::placeholder {
@@ -100,9 +115,9 @@ header div {
     width: 90% ;
     height: 3.9rem;
 
-    background-color: var(--cor-primaria)  ;
+    background-color: rgba(40, 89, 11, 0.315) ;
     opacity: 70%;
-    border-radius: 3rem;
+    border-radius: .5rem;
     border: none;
 
     
@@ -112,7 +127,6 @@ header div {
     color: var(--cor-texto);
     font-weight: 700;
 }
-
 
 /*===== Menu sidebar ========*/
 
@@ -135,22 +149,22 @@ nav .sidebar aside {
     user-select: none;
 }
 
-nav .sidebar a{
+.aMenu{
     display: flex;
     align-items: center;
     height: 6.5rem;
     width: 100%;
     color: #d9560b;
     line-height: 6.5rem;
-    transition: all .5s ease;
+    transition: all .3s ease;
     border-bottom: .1rem solid ;
     border-top: .1rem solid rgba(255, 255, 255, .1);
     border-left: .5rem solid transparent;
 }
 
-nav a.active,a:hover {
+.aMenu:active, .aMenu:hover {
     border-left: .5rem solid var(--cor-primaria);
-    color: var(--cor-primaria);
+    color: #daf82f;
 }
 
 nav .sidebar a i {
@@ -380,8 +394,9 @@ section ul {
     flex-direction: column;
     list-style: none;
     font-size: 2rem;
-    color: #cebd92;
+    color: #000000;
     gap: 3rem;
+    font-weight: 700;
 
 }
 
@@ -394,22 +409,26 @@ section div {
 
 section ul li {
     padding: 3.5rem;
-    border: 1px solid #262626;
-    background: #262626;
+    border: 1px solid #fff172;
+    background: #d9570be8;
     opacity: 90%;
 
     border-radius: .5rem;
     width: 45rem;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0,4);
 
 }
 
 section a {
     padding: 1rem;
-    background-color: white;
+    background-color: rgba(0, 255, 170, 0.603);
     border-radius: 1rem;
     font-size: 1.5rem;
+    text-transform: uppercase;
 
-    margin-left: 15rem;
+    margin-left: 12rem;
+    font-weight: 700;
+    color:#262626
 
 }
 
@@ -425,15 +444,12 @@ section ul li p {
     display: flex;
     flex-direction: column;
 
-    width: 75rem;
-
-    border: none;
-    margin: none;
-    padding: none;
+    width: 75rem;  
 }
 
 #restaurante img {
     margin-bottom: 5rem;
+    margin-top: 10rem;
 }
 
 

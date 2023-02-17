@@ -64,9 +64,10 @@ body {
     color: white;
     text-align: center;
     font-size: 2.4rem;
-    margin-top: 12rem;
+    margin-top: 8rem;
     font-weight: 700;
     text-transform: uppercase;
+    padding: 2rem;
 }
 
 #box span {
@@ -156,11 +157,11 @@ header div {
 }
 
 .logo {
-    margin-left: 40%;
+    margin-left: 37%;
 }
 
 .inputAndButton {
-    margin-left: 25%;
+    margin-left: 27%;
 }
 
 #pesquisa::placeholder {
@@ -207,22 +208,22 @@ nav .sidebar aside {
     user-select: none;
 }
 
-nav .sidebar a{
+.aMenu{
     display: flex;
     align-items: center;
     height: 6.5rem;
     width: 100%;
     color: #d9560b;
     line-height: 6.5rem;
-    transition: all .5s ease;
+    transition: all .3s ease;
     border-bottom: .1rem solid ;
     border-top: .1rem solid rgba(255, 255, 255, .1);
     border-left: .5rem solid transparent;
 }
 
-nav a.active,a:hover {
+.aMenu:active, .aMenu:hover {
     border-left: .5rem solid var(--cor-primaria);
-    color: var(--cor-primaria);
+    color: #daf82f;
 }
 
 nav .sidebar a i {
@@ -400,7 +401,7 @@ nav #check:checked ~ label #cancel{
     color: #d9560b;
 }
 .container {
-    background: linear-gradient(to bottom, black, var(--cor-terceira));
+    background: linear-gradient(to bottom, #51e71557, #ffc400);
 
     border-radius: .5rem;
 
@@ -412,7 +413,7 @@ nav #check:checked ~ label #cancel{
 .prato {
     display: flex;
 
-    background-color: #270b00e1;
+    background-color: #ff724f;
     opacity: 90%;
     width: 65rem;
     height: 19.5rem;
@@ -466,7 +467,7 @@ nav #check:checked ~ label #cancel{
 
 .pratos {
     display: flex;
-    background-color: #270b00e1;
+    background-color: #ff724f;
     margin-top: 3.9rem;
     margin-inline: 7.5rem;
     border-radius: 1rem;
@@ -537,12 +538,12 @@ nav #check:checked ~ label #cancel{
 }
 
 .span2 {
-    margin-left: 6rem;
 }
 
 #span3 {
     font-weight: bold;
     font-size: 2.5rem;
+    
 }
 
 #localizacao a {
@@ -574,12 +575,12 @@ nav #check:checked ~ label #cancel{
 }
 
 #sobre div {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
     text-align: justify;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 75rem;
+    width: 72rem;
     align-items: center;
     margin-left: 6rem;
 
@@ -599,7 +600,7 @@ nav #check:checked ~ label #cancel{
 
 #sobre img {
     height: auto;
-    width: 55rem;
+    width: 53rem;
 
     margin-right: 6rem;
     margin-block: 10rem;
@@ -637,7 +638,7 @@ footer {
     margin-left: 5%;
     gap: 2rem;
 
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-bottom: 1.5rem;
     width: 50%;
 }
