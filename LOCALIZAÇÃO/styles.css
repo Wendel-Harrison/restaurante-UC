@@ -292,12 +292,17 @@ nav #check:checked ~ label #cancel{
 
 /* SEU CODIGO AQUI */
 
+main {
+    background-image: url(../assets/back-localizacao.jpg);
+    background-size: cover;
+}
+
 .title{
     font-size: 4.5rem;
     text-align: center;
     color: var(--cor-texto);
 
-    margin-block: 5rem;
+    padding-block: 5rem;
 } 
 
 #span{
