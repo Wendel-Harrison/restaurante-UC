@@ -20,17 +20,17 @@
 }
 
 html {
-    height: 100%;
-
     scroll-behavior: smooth;
-
    background-color: var(--cor-secundaria);
-
-   margin: auto;
 }
 
 body {
     overflow: overlay;
+}
+
+#fundo {
+    position: relative;
+    margin: auto;
 }
 
 
@@ -52,8 +52,8 @@ body {
 
 #box {
     background-color: #df4103;
-    height: 30rem;
-    width: 30rem;
+    height: 36rem;
+    width: 36rem;
     margin-top: 35rem;
     margin-right: 10rem;
 
@@ -63,8 +63,8 @@ body {
 #box p {
     color: white;
     text-align: center;
-    font-size: 2.3rem;
-    margin-top: 7.8rem;
+    font-size: 2.4rem;
+    margin-top: 12rem;
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -357,8 +357,9 @@ nav #check:checked ~ label #cancel{
     justify-content: space-between;
 }
 
+
+
 #cardapio {
-    padding-top: 1.5rem;
     background: whitesmoke;
 }
 
@@ -390,7 +391,7 @@ nav #check:checked ~ label #cancel{
 
 #cardapio h2 {
     font-family: 'dancing script', sans;
-    font-size: 6.5rem;
+    font-size: 7.5rem;
     font-weight: 400;
     line-height: 12.4rem;
     
@@ -411,9 +412,9 @@ nav #check:checked ~ label #cancel{
 .prato {
     display: flex;
 
-    background-color: black;
+    background-color: #270b00e1;
     opacity: 90%;
-    width: 57.2rem;
+    width: 65rem;
     height: 19.5rem;
 
     border-radius: 1rem;
@@ -440,12 +441,12 @@ nav #check:checked ~ label #cancel{
 }
 
 .prato h3 {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: bold;
 }
 
 .prato p {
-    font-size: 1.8rem;
+    font-size: 2.2rem;
     font-weight: 400;
 }
 
@@ -465,11 +466,13 @@ nav #check:checked ~ label #cancel{
 
 .pratos {
     display: flex;
-    background-color: black;
+    background-color: #270b00e1;
     margin-top: 3.9rem;
     margin-inline: 7.5rem;
     border-radius: 1rem;
     align-items: center;
+    text-transform: uppercase;
+    
 
     justify-content: space-between;
 
@@ -480,7 +483,7 @@ nav #check:checked ~ label #cancel{
 
 .pratos h3 {
     font-size: 3.5rem;
-    font-weight: 400;
+    font-weight: 700;
     color: var(--cor-texto);
     margin-left: 12%;
 }
@@ -516,7 +519,7 @@ nav #check:checked ~ label #cancel{
 
 #bloco-preto {
     background-color: black;
-    opacity: 80%;
+    opacity: 90%;
     height: 100%;
     max-width: 40.5rem;
     position: relative;
@@ -525,10 +528,11 @@ nav #check:checked ~ label #cancel{
 }
 
 #bloco-preto p {
-    padding-top: 10rem;
+    padding-top: 8rem;
     padding-inline: 2rem;
-    font-size: 2.3rem;
+    font-size: 2.5rem;
     padding-bottom: 2rem;
+    font-weight: 700;
 
 }
 
@@ -562,7 +566,7 @@ nav #check:checked ~ label #cancel{
 /* ======= SOBRE ========= */
 
 #sobre {
-    background-color: black;
+    background-color: rgba(41, 71, 41, 0.863);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -570,12 +574,12 @@ nav #check:checked ~ label #cancel{
 }
 
 #sobre div {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: justify;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    width: 60rem;
+    width: 75rem;
     align-items: center;
     margin-left: 6rem;
 
@@ -584,10 +588,13 @@ nav #check:checked ~ label #cancel{
 #sobre div h3 {
     color: #cebd92;
     text-align: center;
+    
 }
 
 #sobre div h4 {
     text-align: center;
+    text-transform: uppercase;
+
 }
 
 #sobre img {
@@ -606,6 +613,7 @@ nav #check:checked ~ label #cancel{
     background-color: #cebd92;
     width: fit-content;
     border-radius: .2rem;
+    box-shadow: 2px 3px 4px  rgba(0, 0, 0, 0.7);
 }
 
 /*============= FOOTER =============*/
@@ -674,7 +682,7 @@ footer {
 }
 
 .footer-info {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: var(--cor-texto);
 }
 
