@@ -283,6 +283,7 @@ main h2 {
     text-align: center;
     padding-top: 1rem;
     
+    
 }
 
 .Btncomidas button{
@@ -295,6 +296,7 @@ main h2 {
     text-transform: uppercase;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.7);
     cursor: pointer;
+    
 }
 
 .Btncomidas button:active, .botao_pedidos:active{
@@ -312,6 +314,7 @@ section {
     margin-bottom: 5rem;
     position: relative;
     display: flex;
+    
 
 }
 
@@ -340,22 +343,28 @@ section {
 
 }
 
+#agua{
+    width: auto;
+}
+
 .comidas span{
     color:#D9560B;
     font-size: 1.8rem;
     font-weight: 700;
     display: flex;
     flex-direction: row-reverse;
+    width: ;
 }
 
 #div1{
     padding-top: 4rem;
 }
 
-#div1, #div2, #div3, #div4, #div5{
+#div1, #div2, #div3, #div4, #div5, #div6, #div7{
     display: flex;
     justify-content: space-between;
     padding-inline: 17rem;
+    width: auto;
     
     
     
@@ -364,7 +373,7 @@ section {
 
 
 
-#div1 div img, #div2 div img, #div3 div img, #div4 div img, #div5 div img{
+#div1 div img, #div2 div img, #div3 div img, #div4 div img, #div5 div img, #div6 img, #div7 img{
     width: 15rem;
     height: 15rem;
     
