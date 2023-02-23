@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter';
+    color: rgb(68, 148, 82);
+}
+
+#fundo{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    background-image: url(../assets/imagem\ fundo\ registre-se.jpg);
+}
+#registro{
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+#login{
+    color: white;
+    text-align: center;
+}
+
+#forms{
+    margin: 5px;
+    text-align: center;
+
+}
+
+#email{
+    text-align: center;
+    margin: 5px;
+}
+
+#botão{
+    position: relative;
+}
