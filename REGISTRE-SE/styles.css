@@ -7,11 +7,11 @@
 }
 
 #fundo{
-    margin: 5px;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter';
-    background-color: rgb(61, 172, 79);
+    background-image: url(../assets/imagem\ fundo\ registre-se.jpg);
 }
 #registro{
     color: rgb(255, 255, 255);
