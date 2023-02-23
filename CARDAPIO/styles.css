@@ -23,7 +23,7 @@ html {
 
     scroll-behavior: smooth;
 
-   background-color: var(--cor-secundaria);
+   background-color: var(--cor-secundaria); 
 
 }
 
@@ -123,6 +123,7 @@ nav .sidebar {
     background: rgba(24, 24, 24, 0.966);
     transition: all .5s ease;
     z-index: 1;
+    visibility: hidden;
 }
 
 nav .sidebar aside {
@@ -134,22 +135,22 @@ nav .sidebar aside {
     user-select: none;
 }
 
-nav .sidebar a{
+.aMenu{
     display: flex;
     align-items: center;
     height: 6.5rem;
     width: 100%;
     color: #d9560b;
     line-height: 6.5rem;
-    transition: all .5s ease;
+    transition: all .3s ease;
     border-bottom: .1rem solid ;
     border-top: .1rem solid rgba(255, 255, 255, .1);
     border-left: .5rem solid transparent;
 }
 
-nav a.active,a:hover {
+.aMenu:active, .aMenu:hover {
     border-left: .5rem solid var(--cor-primaria);
-    color: var(--cor-primaria);
+    color: #daf82f;
 }
 
 nav .sidebar a i {
@@ -197,6 +198,9 @@ nav label #cancel{
 
 nav #check:checked ~ .sidebar{
     left: 0;
+    visibility: visible;
+    transition: all .5s ease;
+
 }
 
 nav #check:checked ~ label #cancel{

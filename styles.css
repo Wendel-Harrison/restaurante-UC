@@ -22,6 +22,7 @@
 html {
     scroll-behavior: smooth;
    background-color: var(--cor-secundaria);
+   background-image: url(./assets/back-localizacao.jpg);
 }
 
 body {
@@ -31,13 +32,12 @@ body {
 #fundo {
     position: relative;
     margin: auto;
+    width: fit-content;
 }
 
 
 #img-carrossel-pc {
     background-image: url(./assets/foto_carrousel2.png);
-    background-repeat: no-repeat;
-    background-position: 50% 0%;
     height: 75rem ;
     background-size: cover;
 
@@ -46,7 +46,7 @@ body {
 }
 
 #carrossel {
-    padding-top: 1rem;
+    padding-top: 1%;
 
 }
 
@@ -105,10 +105,6 @@ body {
     align-items: center;
 
     padding: 1% 0% 0% 7%;
-
-    width: 100%;
-    z-index: 2;
-
     background-color: var(--cor-header);
 }
 
@@ -124,9 +120,9 @@ body {
 }
 
 header div {
-    padding-left: 2rem;
+    padding-left: 2%;
     display: flex; 
-    gap: 3rem; 
+    gap: 3%; 
 }
 
 #menuImg {
@@ -141,7 +137,7 @@ header div {
 
 #loginImg:hover {
     background-color: var(--cor-primaria);
-    border-radius: 30px;
+    border-radius: 3rem;
     transition: 0.5s;
     
 }
@@ -174,7 +170,7 @@ header div {
     width: 90% ;
     height: 3.9rem;
 
-    background-color: rgba(40, 89, 11, 0.315) ;
+    background-color: #28590b50 ;
     opacity: 70%;
     border-radius: .5rem;
     border: none;
@@ -197,6 +193,7 @@ nav .sidebar {
     background: rgba(24, 24, 24, 0.966);
     transition: all .5s ease;
     z-index: 1;
+    visibility: hidden;
 }
 
 nav .sidebar aside {
@@ -271,6 +268,9 @@ nav label #cancel{
 
 nav #check:checked ~ .sidebar{
     left: 0;
+    visibility: visible;
+    transition: all .5s ease;
+
 }
 
 nav #check:checked ~ label #cancel{
@@ -361,33 +361,9 @@ nav #check:checked ~ label #cancel{
 
 
 #cardapio {
-    background: whitesmoke;
-}
-
-
-#alho {
-
-    position: absolute;
-    left: 100rem;
-    top: 90rem;
-    padding-left: 5rem;
-
-    max-width: 30rem;
-}
-
-#planta {
-    position: absolute;
-    left: 40rem;
-    top: 120rem;
-    z-index: 1;
-}
-
-#planta2 {
-    position: absolute;
-    z-index: 1;
-
-    top: 157rem;
-    
+    background-image: url(./assets/background-red.jpg);
+    background-size: cover;
+    padding-bottom: 4%;
 }
 
 #cardapio h2 {
@@ -396,35 +372,27 @@ nav #check:checked ~ label #cancel{
     font-weight: 400;
     line-height: 12.4rem;
     
-    padding-left: 4.6rem;
-
-    color: #d9560b;
+    padding-left: 4%;
+    
+    color: black;
 }
-.container {
-    background: linear-gradient(to bottom, #51e71557, #ffc400);
-
-    border-radius: .5rem;
-
-    padding: 2rem;
-    border: 1px solid wheat;
-}
-
 
 .prato {
     display: flex;
-
-    background-color: #ff724f;
+    
+    background-color: #ffd000b2;
     opacity: 90%;
-    width: 65rem;
-    height: 19.5rem;
-
+    width: 55%;
+    height: 22rem;
+    
     border-radius: 1rem;
-
+    
     color: var(--cor-texto);
-
+    
     align-items: center;
-
-    border: 1px solid wheat;
+    text-align: justify;
+    
+    
 }
 
 .prato img {
@@ -449,27 +417,35 @@ nav #check:checked ~ label #cancel{
 .prato p {
     font-size: 2.2rem;
     font-weight: 400;
+    width: 90%;
 }
 
 #prato-chef1 {
-    margin-left: 6rem;
+    margin-left: 5%;
     padding-top: 0.1rem;
 
     margin-bottom: 1rem;
     
 }
 
+
+
+
 #flex-dire{
     display: flex;
     flex-direction: row-reverse;
-    padding-right: 6rem;
+    padding-right: 5%; 
+    height: 22rem;  
+    margin-top: 2%;   
 }
+
+
 
 .pratos {
     display: flex;
-    background-color: #ff724f;
-    margin-top: 3.9rem;
-    margin-inline: 7.5rem;
+    background-color: #ffd000b2;
+    margin-top: 4%;
+    margin-inline: 5%;
     border-radius: 1rem;
     align-items: center;
     text-transform: uppercase;
@@ -478,8 +454,6 @@ nav #check:checked ~ label #cancel{
     justify-content: space-between;
 
     padding: 3% 0% 3% 3%;
-
-    border: 1px solid wheat;
 }
 
 .pratos h3 {
@@ -502,7 +476,7 @@ nav #check:checked ~ label #cancel{
 }
 
 #span-pratos {
-    margin-left: 10rem;
+    margin-left: 12%;
 }
 
 #localizacao {
@@ -529,16 +503,14 @@ nav #check:checked ~ label #cancel{
 }
 
 #bloco-preto p {
-    padding-top: 8rem;
-    padding-inline: 2rem;
+    padding-top: 15%;
+    padding-inline: 5%;
     font-size: 2.5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4%;
     font-weight: 700;
 
 }
 
-.span2 {
-}
 
 #span3 {
     font-weight: bold;
@@ -551,8 +523,8 @@ nav #check:checked ~ label #cancel{
     color: var(--cor-secundaria);
 
     font-size: 2rem;
-    margin-left: 15.5rem;
-    margin-top: 1rem;
+    margin-left: 40%;
+    margin-top: 4%;
     cursor: pointer;
     text-transform: uppercase;
     font-weight: 700;
@@ -567,7 +539,7 @@ nav #check:checked ~ label #cancel{
 /* ======= SOBRE ========= */
 
 #sobre {
-    background-color: rgba(41, 71, 41, 0.863);
+    background-color: #294729dc;
     color: white;
     display: flex;
     justify-content: space-between;
