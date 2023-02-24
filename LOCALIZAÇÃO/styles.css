@@ -400,15 +400,13 @@ section ul {
     list-style: none;
     font-size: 2rem;
     color: #000000;
-    gap: 3rem;
+    gap: 5rem;
     font-weight: 700;
 
 }
 
 section div {
     margin-inline: 5rem;
-    padding: 3rem;
-
     display: flex;
 }
 
@@ -449,12 +447,12 @@ section ul li p {
     display: flex;
     flex-direction: column;
 
-    width: 75rem;  
+    width: 75rem;
 }
 
 #restaurante img {
-    margin-bottom: 5rem;
-    margin-top: 10rem;
+    margin-bottom: 4rem;
+    height: 42.5rem;
 }
 
 
