@@ -19,17 +19,18 @@ main{
     margin: auto;
     background-color: #4D8764;
     opacity: 0.9;
-    width: 60rem;
+    width: 55rem;
     border-radius: 2rem;
 }
+
 #logo{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
-    margin-top: 10rem;
-    padding-top: 10rem;
+    margin-top: 5rem;
+    padding-top: 5rem;
     gap: 2rem;
     text-transform: uppercase;
     font-size: 1.3rem;
@@ -97,7 +98,7 @@ button{
     background-color: #00694A; 
     color: white;
     border: none;
-    margin-bottom: 7rem;
+    margin-bottom: 4rem;
     font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
@@ -111,8 +112,4 @@ button{
     margin-left: 7.3rem;
     color: white;
     margin-bottom: 3rem;
-}
-
-a {
-    padding-right: 2rem;
 }
