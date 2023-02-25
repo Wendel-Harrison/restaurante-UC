@@ -9,10 +9,10 @@ main{
         margin: auto;
         background-color: #4D8764;
         opacity: 0.9;
-        width: 60rem;
+        width: 30rem;
         border-radius: 2rem;
-        margin-top: 10%;
-        
+        margin-top: 8%;
+        height: 400px;
     }
 
 #fundo{
