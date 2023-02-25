@@ -21,6 +21,7 @@ main{
     opacity: 0.9;
     width: 60rem;
     border-radius: 2rem;
+    display: block;
 }
 #logo{
     display: flex;

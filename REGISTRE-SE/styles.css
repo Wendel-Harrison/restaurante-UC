@@ -3,15 +3,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'inter';
-    color: rgb(68, 148, 82);
 }
 
 main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
+        margin: auto;
+        background-color: #4D8764;
+        opacity: 0.9;
+        width: 60rem;
+        border-radius: 2rem;
+        margin-top: 10%;
+        
+    }
 
 #fundo{
     margin: 0;
@@ -46,5 +48,6 @@ main{
 }
 
 #checkbox{
-    float: right;
+    text-align: center;
+    color: whitesmoke;
 }
