@@ -20,7 +20,6 @@ main{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter';
-    background-image: url(../assets/imagem\ fundo\ registre-se.jpg);
 }
 #registro{
     color: rgb(255, 255, 255);
