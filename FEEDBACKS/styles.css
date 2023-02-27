@@ -222,10 +222,10 @@ nav label #btn,label #cancel {
     margin: 2rem 3rem;
     font-size: 2.8rem;
     height: 5rem;
-    
+    width: 6.1rem;
     transition: all .5s ease;
 
-    border: .1rem solid  ;
+    border: .1rem solid;
     background: #262626;
     text-align: center;
     line-height: 5rem;
