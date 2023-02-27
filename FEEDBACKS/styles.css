@@ -11,32 +11,67 @@
 :root {
     font-size: 62.5%; /* 1rem = 10px */
 
-    --cor-primaria: #4D8764;
-    --cor-secundaria: #6CBE83;
+    --cor-primaria: #4cbc0d;
+    --cor-secundaria: #28590b;
+    --cor-terceira: #bf0a0a;
     --cor-header: #6CBE83;
 
-    
-
-    --cor-texto: #ED7B05;
+    --cor-texto: #FFFFFF;
 }
 
 html {
-    height: 100%;
-    max-width: fit-content;
-
     scroll-behavior: smooth;
-
-   background-color: whitesmoke;
-
+   background-color: #D9D9D9;
+   background-image: url(./assets/back-localizacao.jpg);
 }
 
 body {
-    overflow: overlay;
+    overflow-x: hidden;
 }
 
 #fundo {
+    width: fit-content;
     position: relative;
     margin: auto;
+}
+
+
+#img-carrossel-pc {
+    background-image: url(./assets/foto_carrousel2.png);
+    height: 75rem ;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#carrossel {
+    padding-top: 1%;
+
+}
+
+#box {
+    background-color: #df4103;
+    height: 36rem;
+    width: 36rem;
+    margin-top: 35rem;
+    margin-right: 10rem;
+
+    border-radius: 20rem;;
+}
+
+#box p {
+    color: white;
+    text-align: center;
+    font-size: 2.4rem;
+    margin-top: 8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 2rem;
+}
+
+#box span {
+    color: var(--cor-header);
 }
 
 
@@ -46,10 +81,6 @@ body {
     align-items: center;
 
     padding: 1% 0% 0% 7%;
-
-    width: 100%;
-    z-index: 2;
-
     background-color: var(--cor-header);
 }
 
@@ -60,18 +91,13 @@ body {
 }
 
 #carrossel  {
-    background: whitesmoke;   
     padding: 0;
 }
 
 header div {
-    padding-left: 2rem;
+    padding-left: 2%;
     display: flex; 
-    gap: 3rem; 
-}
-
-#menuImg {
-    width: 100%;
+    gap: 3%; 
 }
 
 #loginImg {
@@ -80,16 +106,17 @@ header div {
     border-radius: 3rem;
 }
 
+
 #loginImg:hover {
     background-color: var(--cor-primaria);
-    border-radius: 30px;
+    border-radius: 3rem;
     transition: 0.5s;
     
 }
 
 #pesquisa-btn {
     position: relative;
-    right: 85%;
+    
 }
 
 #logoImg {
@@ -98,7 +125,7 @@ header div {
 }
 
 .logo {
-    margin-left: 37%;
+    margin-left: 40%;
 }
 
 .inputAndButton {
@@ -115,7 +142,7 @@ header div {
     width: 90% ;
     height: 3.9rem;
 
-    background-color: rgba(40, 89, 11, 0.315) ;
+    background-color: #28590b50 ;
     opacity: 70%;
     border-radius: .5rem;
     border: none;
@@ -195,7 +222,7 @@ nav label #btn,label #cancel {
     margin: 2rem 3rem;
     font-size: 2.8rem;
     height: 5rem;
-    width: 5rem;
+    
     transition: all .5s ease;
 
     border: .1rem solid  ;
@@ -224,6 +251,7 @@ nav #check:checked ~ label #cancel{
     visibility: visible;
    
 }
+
 
 /* SEU CODIGO AQUI */
 
@@ -267,7 +295,7 @@ section {
 #textarea {
     margin-top: 5rem;
     width: 76rem;
-    height: 31rem;
+    height: 30rem;
 
     font-size: 2.5rem;
     padding: 2rem;
@@ -311,12 +339,10 @@ section {
 /*============= FOOTER =============*/
 
 footer {
-    background-color: var(--cor-primaria);
-    margin-top: 90px;
+    background-color: var(--cor-secundaria);
 }
 
 #infoFooter {
-
     display: flex;
     justify-content: space-between;
 }
@@ -327,10 +353,10 @@ footer {
     display: flex;
     flex-direction: column;
     margin-left: 5%;
-    gap: 3rem;
+    gap: 2rem;
 
-    padding-top: 5.6rem;
-    padding-bottom: 2rem;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
     width: 50%;
 }
 
@@ -338,37 +364,40 @@ footer {
     display: flex;
     justify-content: space-between;
     width: 50%;
-    padding-top: 10rem;
+    padding-top: 5rem;
+}
 
-
+#logoAndName img{
+    width: 6rem;
+    margin: 0;
+    border-radius: 3rem;
 }
 
 #info-restaurante {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 #info-restaurante div {
     display: flex;
     align-items: center;
-
     color: var(--cor-texto);
-    gap: 5rem ;
+    gap: 2rem ;
     
 }
 
 #info-restaurante p {
-    padding-right: 40rem;
+    padding-right: 25rem;
 }
 
 
 #info-restaurante h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 .footer-info {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: var(--cor-texto);
 }
 
@@ -384,7 +413,6 @@ footer {
 }
 
 #navegacao ul li a, #redes-sociais ul li a{
-    text-decoration: none;
     color: var(--cor-texto);
 }
 
@@ -407,11 +435,9 @@ footer {
 #copyright {
     display: flex;
     justify-content: space-between;
-
-    font-size: 1.6rem;
-
-    padding-inline: 10rem;
-    padding-block: 3rem;
+    font-size: 1.2rem;
+    padding-inline: 8rem;
+    padding-block: 2rem;
 }
 
 #span-copy {
