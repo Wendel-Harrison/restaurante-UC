@@ -319,7 +319,6 @@ section {
     justify-content: space-between;
     padding-inline: 2rem;
     margin-top: 1rem;
-    align-items: center;
 }
 
 #btn img {
@@ -333,6 +332,8 @@ section {
     color: white;
     border-radius: 1rem;
     text-transform: uppercase;
+
+    margin-bottom: 5rem;
     
     
 }
