@@ -1,4 +1,4 @@
-# restaurante-UC 🥗
+# Restaurante-UC 🥗
 
  <h3 align="center"> Este está sendo um projeto desenvolvido por um grupo de 6 pessoas que estão cursando o PROA (curso de desenvolvimento JAVA web). </h3>
 
