@@ -3,14 +3,17 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'inter';
-    color: rgb(68, 148, 82);
 }
 
 main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin: auto;
+    background-color: #4d8764ee;
+    opacity: 0.9;
+    width: 30rem;
+    border-radius: 2rem;
+    display: block;
+    height: 550px;
+    margin-top: 45px;
 }
 
 #fundo{
@@ -18,32 +21,85 @@ main{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter';
+    background-image: url(../assets/imagem\ fundo\ registre-se.jpg);
 }
 #registro{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     text-align: center;
+    padding-top: 50px;
+    margin-bottom: 1px;
 }
+
 #login{
-    color: white;
+    color: rgb(0, 0, 0);
     text-align: center;
+    
+}
+
+#imagem{
+    width: 65px;
+    border-radius: 60px;
+    margin: 20px 0% 20px 0;
+    margin-left: 43%;
 }
 
 #forms{
-    margin: 5px;
     text-align: center;
-
+    display: flex;
+    margin-inline: 30px;
+    gap: 10px;
 }
 
 #email{
-    text-align: center;
-    margin: 5px;
+    text-align: center; 
+    width: auto;
+    margin-inline: 30px;
 }
 
-#botao{
-    justify-content: center;
-   
+.selecionar{
+    display: flex;
+    color: rgb(0, 0, 0);
+    align-items: center;   
+    gap: 2.5px; 
+}
+
+input{
+    padding: 10px 0;
+    border-radius: 10px;
+    border: none;
+    width: 100%;
+    padding-left: 10px;
+    margin-block: 12.5px;
 }
 
 #checkbox{
-    float: right;
+width: 15px;
+margin-left: 30px ;
+
+border: none;
+}
+
+
+.senha{
+    margin-bottom: 10px;
+    display: flex;
+    margin-inline: 30px;
+    gap: 10px;
+}
+
+button{
+    border-radius: 10px;
+    padding: 15px 100px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    background-color:  #223d2d;
+    margin-left: 22%;
+}
+
+button:hover{
+    color: #223d2d;
+    background-color: white;
+    transition: 0.5s ease;
 }
