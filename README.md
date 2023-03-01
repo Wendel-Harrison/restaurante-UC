@@ -25,7 +25,7 @@ Gabriela Nunes;<br>
 Guilherme Gabriel;<br>
 Raphael Verseck;<br>
 Roger;<br>
-william Rizzo.
+Willian Rizzo.
 
 
 
