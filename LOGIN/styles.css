@@ -34,7 +34,7 @@ main{
     padding-top: 5rem;
     gap: 2rem;
     text-transform: uppercase;
-    font-size: 1.3rem;
+    font-size: 1rem;
     margin-bottom: 2rem;
 }
 
@@ -46,17 +46,17 @@ main{
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid black;
-    margin-inline: 10rem;
-    margin-bottom: 4rem; 
+    margin-inline: 9rem;
+    margin-bottom: 3rem; 
 }
 
 .input input{
     background:none ;
     border: none;
     width: 100%;
-    padding-block: 1.5rem;
+    padding-block: 1.3rem;
     padding-left: .5rem;  
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: 700;
 }
 
@@ -64,7 +64,7 @@ main{
     color: white;
     text-transform: uppercase;
     font-weight: 700;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 
 .input img{
@@ -77,11 +77,10 @@ main{
     gap: 1rem;
     color: white;
 
-    font-size: 2rem;
 }
 
 main p {
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: white;
 }
 
@@ -94,8 +93,8 @@ main p {
 
 button{
 
-    padding-inline: 12rem;
-    padding-block: 1.5rem;
+    padding-inline: 10rem;
+    padding-block: 1.3rem;
     background-color: #00694A; 
     color: white;
     border: none;

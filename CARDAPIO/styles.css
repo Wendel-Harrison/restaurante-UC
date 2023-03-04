@@ -19,7 +19,6 @@
 
 html {
     height: 100%;
-    max-width: fit-content;
 
     scroll-behavior: smooth;
 
@@ -29,6 +28,11 @@ html {
 
 body {
     overflow: overlay;
+}
+
+#fundo {
+    margin: auto;
+    width: fit-content;
 }
 
 #cabecalho {

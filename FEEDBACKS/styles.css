@@ -115,8 +115,9 @@ header div {
 }
 
 #pesquisa-btn {
-    position: relative;
-    
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 7px;
 }
 
 #logoImg {
@@ -130,6 +131,7 @@ header div {
 
 .inputAndButton {
     margin-left: 27%;
+
 }
 
 #pesquisa::placeholder {
@@ -317,7 +319,6 @@ section {
     justify-content: space-between;
     padding-inline: 2rem;
     margin-top: 1rem;
-    align-items: center;
 }
 
 #btn img {
@@ -331,6 +332,8 @@ section {
     color: white;
     border-radius: 1rem;
     text-transform: uppercase;
+
+    margin-bottom: 5rem;
     
     
 }
