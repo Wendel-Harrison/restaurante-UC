@@ -14,7 +14,8 @@
     --cor-primaria: #4cbc0d;
     --cor-secundaria: #28590b;
     --cor-terceira: #bf0a0a;
-    --cor-header: #6CBE83;
+    --cor-header: #00995B;
+    --cor-laranja: #FF7500;
 
     --cor-texto: #FFFFFF;
 }
@@ -51,7 +52,7 @@ body {
 }
 
 #box {
-    background-color: #df4103;
+    background-color: var(--cor-laranja);
     height: 36rem;
     width: 36rem;
     margin-top: 35rem;
@@ -80,7 +81,7 @@ body {
     display: flex;
     align-items: center;
 
-    padding: 1% 0% 0% 7%;
+    padding: 1% 0% 0.5% 7%;
     background-color: var(--cor-header);
 }
 
@@ -120,7 +121,6 @@ header div {
 
 #logoImg {
     width: 6rem;
-    border-radius: 3rem;
 }
 
 .logo {
@@ -161,7 +161,7 @@ nav .sidebar {
     width: 30rem;
     left: -30rem;
     height: 100vh;
-    background: rgba(24, 24, 24, 0.966);
+    background: rgb(0, 0, 0);
     transition: all .5s ease;
     z-index: 1;
     visibility: hidden;
@@ -181,7 +181,7 @@ nav .sidebar aside {
     align-items: center;
     height: 6.5rem;
     width: 100%;
-    color: #d9560b;
+    color: var(--cor-laranja);
     line-height: 6.5rem;
     transition: all .3s ease;
     border-bottom: .1rem solid ;
@@ -216,7 +216,7 @@ nav #check {
 nav label #btn,label #cancel {
     position: absolute;
     cursor: pointer;
-    color: #d9560b;
+    color: var(--cor-laranja);
     border-radius: .5rem;
     margin: 2rem 3rem;
     font-size: 2.8rem;
@@ -225,7 +225,7 @@ nav label #btn,label #cancel {
     transition: all .5s ease;
 
     border: .1rem solid  ;
-    background: #262626;
+    background: #000;
     text-align: center;
     line-height: 5rem;
 
@@ -334,16 +334,16 @@ nav #check:checked ~ label #cancel{
     font-family: 'dancing script', sans;
     font-size: 7.5rem;
     line-height: 12.4rem;
+    width: 100%;
+    text-align: center;
     
-    padding-left: 4%;
-    
-    color: black;
+    color: #FFF;
 }
 
 .prato {
     display: flex;
     
-    background-color: #ffd000b2;
+    background-color: var(--cor-laranja);
     width: 55%;
     height: 22rem;
     
@@ -400,7 +400,7 @@ nav #check:checked ~ label #cancel{
 
 .pratos {
     display: flex;
-    background-color: #ffd000b2;
+    background-color: var(--cor-laranja);
     margin-top: 4%;
     margin-inline: 5%;
     border-radius: 1rem;
@@ -485,18 +485,18 @@ nav #check:checked ~ label #cancel{
     text-transform: uppercase;
     font-weight: 700;
 
-    background-color: #cebd92 ;
+    background-color: var(--cor-laranja) ;
     padding: 1rem;
     border-radius: .5rem;
 
-    color: #000;
+    color: #FFF;
 }
 
 /* ======= SOBRE ========= */
 
 #sobre {
-    background-color: #294729dc;
-    color: white;
+    background-color: rgba(206, 206, 206, 0.582);
+    color: #000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -504,18 +504,18 @@ nav #check:checked ~ label #cancel{
 
 #sobre div {
     font-size: 2.3rem;
-    text-align: justify;
     display: flex;
     flex-direction: column;
     gap: 2rem;
     width: 72rem;
     align-items: center;
-    margin-left: 6rem;
+    margin-left: 5rem;
+    margin-right: 1rem;
 
 }
 
 #sobre div h3 {
-    color: #cebd92;
+    color: var(--cor-header);
     text-align: center;
     
 }
@@ -539,7 +539,7 @@ nav #check:checked ~ label #cancel{
     font-weight: 700;
     color: white;
     padding: 1rem 2rem;
-    background-color: #cebd92;
+    background-color: var(--cor-laranja);
     width: fit-content;
     border-radius: .2rem;
     box-shadow: 2px 3px 4px  rgba(0, 0, 0, 0.7);
@@ -548,7 +548,7 @@ nav #check:checked ~ label #cancel{
 /*============= FOOTER =============*/
 
 footer {
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-header);
 }
 
 #infoFooter {

@@ -11,13 +11,13 @@
 :root {
     font-size: 62.5%; /* 1rem = 10px */
 
-    --cor-primaria: #4D8764;
-    --cor-secundaria: #6CBE83;
-    --cor-header: #6CBE83;
+    --cor-primaria: #4cbc0d;
+    --cor-secundaria: #28590b;
+    --cor-terceira: #bf0a0a;
+    --cor-header: #00995B;
+    --cor-laranja: #FF7500;
 
-    
-
-    --cor-texto: #ED7B05;
+    --cor-texto: #FFFFFF;
 }
 
 html {
@@ -30,7 +30,7 @@ html {
 }
 
 body {
-    overflow: overlay;
+    overflow-x: hidden;
 }
 
 #fundo {
@@ -304,28 +304,28 @@ main {
 .title{
     font-size: 4.5rem;
     text-align: center;
-    color: var(--cor-texto);
+    color: var(--cor-laranja);
 
     padding-block: 5rem;
 } 
 
 #span{
-    color: var(--cor-primaria);
+    color: var(--cor-header);
 }
 
 #app {
    display: flex;
    font-size: 3rem;
-   color: var(--cor-texto);
+   color: var(--cor-laranja);
 
-   margin-left: 10rem;
+   margin-left: 12rem;
    justify-content: space-between;
 }
 
 #app ul li {
     font-weight: 700;
     margin-bottom: .5rem;
-    color: var(--cor-texto);
+    color: var(--cor-laranja);
 }
 
 #app button {
@@ -342,14 +342,13 @@ main {
 }
 
 #app-img {
-    margin-right: 15rem;
+    margin-right: 10rem;
     height: 55rem;
 }
 
 #logoImg {
     width: 6rem;
     margin: 0;
-    border-radius: 3rem;
 }
 
 #app h3 {
@@ -392,7 +391,7 @@ hr {
 }
 
 #title-loca {
-    color: var(--cor-texto);
+    color: var(--cor-laranja);
     text-transform: uppercase;
     font-size: 4rem;
     color: #262626;
@@ -403,7 +402,7 @@ section ul {
     flex-direction: column;
     list-style: none;
     font-size: 2rem;
-    color: #000000;
+    color: #fff;
     gap: 5rem;
     font-weight: 700;
 
@@ -417,7 +416,7 @@ section div {
 section ul li {
     padding: 3.5rem;
     border: 1px solid #fff172;
-    background: #d9570be8;
+    background: var(--cor-laranja);
     opacity: 90%;
 
     border-radius: .5rem;
@@ -428,14 +427,14 @@ section ul li {
 
 section a {
     padding: 1rem;
-    background-color: #00ffaa9a;
+    background-color: var(--cor-header);
     border-radius: 1rem;
     font-size: 1.5rem;
     text-transform: uppercase;
 
     margin-left: 12rem;
     font-weight: 700;
-    color:#262626
+    color: #fff
 
 }
 
@@ -459,63 +458,10 @@ section ul li p {
     height: 42.5rem;
 }
 
-
-
-
-
-
-/*============= FOOTER =============*/
-
-#sobre {
-    background-color: black;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#sobre div {
-    font-size: 2rem;
-    text-align: justify;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    width: 60rem;
-    align-items: center;
-    margin-left: 6rem;
-
-}
-
-#sobre div h3 {
-    color: #cebd92;
-    text-align: center;
-}
-
-#sobre div h4 {
-    text-align: center;
-}
-
-#sobre img {
-    height: auto;
-    width: 50rem;
-
-    margin-right: 7rem;
-    margin-block: 10rem;
-}
-
-#sobre a {
-    text-decoration: none;
-    color: white;
-    padding: 1rem 2rem;
-    background-color: #cebd92;
-    width: fit-content;
-    border-radius: .2rem;
-}
-
 /*============= FOOTER =============*/
 
 footer {
-    background-color: #28590b;
+    background-color: var(--cor-header);
 
 }
 
