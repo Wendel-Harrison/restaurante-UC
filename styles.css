@@ -253,15 +253,24 @@ nav #check:checked ~ label #cancel{
 
 /* ========== sidebar mobile ========*/
 
-@media(max-width: 800px){nav .sidebar{
+@media(max-width: 800px){
+    nav .sidebar{
+    position: fixed;
     opacity: 0;
     visibility: hidden;
     height: auto;
     width: 6rem;
     left: 0;
-    margin: 7rem 0;
+    top: 5rem;
+    margin: 5rem 0;
     }
-
+    
+    nav label #btn,label #cancel{
+        position: fixed;
+        top: -1rem;
+        z-index: 2;
+    }
+        
     nav #btn {
         position: fixed;
         left: -2.5rem;
@@ -655,176 +664,246 @@ footer {
 
 /*======== RESPONSIVO ==========*/
 
-@media (max-width: 800px) {
-       
-    #cabecalho *, #cabecalho {
-        overflow: auto;
-        margin: 0;
+@media only screen and (max-width: 480px){
+    
+     /* CSS RESET */
+    main, .inputAndButton, #login-btn, #logoAndName img, #navegacao, .textLink, #copyright  {
+        display: none;
+    }
+
+    .prato {
+        width: auto;
+    }
+
+    #redes-sociais {
         padding: 0;
-        visibility: initial;
-        display: initial;
-        opacity: initial;
-        flex-direction: initial;
-        position: initial;
-        font-size: initial;
-        color: initial;
-        font-weight: initial;
-        filter: initial;
-        background: initial;
     }
 
-    body, #fundo {
-        overflow: overlay;
+    #info-restaurante p {
+        padding-right: 0;
+    }
+
+
+    /* ----------------- */
+
+    body {
+        width: 100%;
+    }
+    #fundo {
         width: 100%;
     }
 
-    .inputAndButton, #pesquisa, #lupaImg {
-        display: none;
-    }
-
-    #cabecalho {
-        background-color: var(--cor-header);
-        display: flex;
-        justify-content: flex-end;
-    }
-
-
-    #carrossel {
-        width: 44rem;
-    }
-
-    #img-carrossel-pc {
-        display: none;
-    }
-
-
-    #cardapio .titulo h2 {
-        font-size: 4.5rem;
-        margin: initial;
-        padding: initial;
-        line-height: initial;
-        text-align: center;
-    }
-
-     #prato-chef1, #flex-dire {
-        margin: initial;
-        padding: initial;
-        margin-bottom: 2rem;
-        margin-right: 1rem;
+    header {
+        position: fixed;
         width: 100%;
+        justify-content: center;
+        padding: 0;
+        height: 6.7rem;
+        margin: 0;
+        z-index: 1;
+    }
+    
+    .logo {
+        height: 60px;
+        margin: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    #logoImg {
+        height: 100%;
+        width: 100%;
+    }
+    #cardapio {
+        position: relative;
+        top: 6.7rem;
+    }
+
+    #cardapio h2 {
+        padding: 3rem 0 2rem 0;
         
+        font-size: 4rem;
+        line-height: normal;
     }
 
-    .prato p {
-        font-size: 1.5rem;
-        margin-left: 1rem;
+    #flex-dire {
+        padding: 0;
+        height: auto;
+        margin-top: 1rem;
     }
 
-    .prato img {
-        width: 10rem;
-        height: 10rem;
-        margin: 1rem;
+    #prato-chef1, #prato-chef2 {
+        margin: auto;
+        width: 95%;
+        height: auto;
+        padding-block: 0.5rem ;
     }
 
     .prato div {
-        gap: 2rem;
+        gap: 1rem;
     }
 
-    .prato h3 {
-        font-size: 1.7rem;
-        text-align: center;
+    .prato img {
+        width: 20%;
+        height: 20%;
+        margin: 1rem 2rem;
     }
 
-    .container {
-        margin: initial;
-        background-color: transparent;
+    .prato div h3 {
+        font-size: 1.8rem;
+    }
 
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .prato div p {
+        font-size: 1.3rem;
     }
 
     .pratos {
-        margin-top: initial;
+        display: block;
+        padding: 0;
+        margin-inline: 2.5%;
+    }
+
+    .pratos h3 {
+        font-size: 2rem;
+        margin: 0;
+        text-align: center;
+        padding-top: 1rem;
+        margin-top: 3rem;
+    }
+
+    .pratos br {
+        display: none;
+    }
+
+    #span-pratos {
+        margin: 0;
+    }
+
+    .pratos div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .pratos img {
+        width: 60%;
+    }
+
+    #localizacao {
+        height: 35rem;
+    }
+
+    #imagem-ovo {
+        height: 100%;
+    }
+
+    #bloco-preto {
+        width: 100%;
+        top: -28.5rem;
+        max-width: none;
+        height: 28.5rem;
+        background-color: #00000086;
+        opacity: 1;
+    }
+
+    #bloco-preto p {
+        padding: 2rem;
+        font-size: 1.5rem;
+    }
+
+    #bloco-preto a {
+        margin-left: 3rem;
+        font-size: 1.5rem;
+        padding: 0.5rem 2rem;
+    }
+
+    #span3 {
+        font-size: 1.7rem;
+    }
+
+    #sobre {
+        display: block;
         width: 100%;
     }
 
-    .pratos {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    #textos p {
+        font-size: 1.3rem;
+    } 
+
+    #sobre #textos {
+        width: 95%;
+        font-size: 1.8rem;
+        margin: auto;
+        padding-top: 3rem;
+        gap: 1rem;
+        margin-bottom: 1rem;
     }
 
-    .pratos h3, #span-pratos {
-        visibility: visible;
-        opacity: 1;
-        margin-left: -3rem;
+    #sobre #divImg {
+        width: 85%;
+        height: 200px;
+        margin: auto;
+        padding-bottom: 2rem;
     }
 
-     
-
-    #bloco-preto, #bloco-preto p {
-        max-width: 20rem;
-        font-size: 2rem;
-        padding: initial;
-        padding-top: 4rem;
-        text-align: center;
-    }
-
-    #localizacao span {
-        margin: initial;
-    }
-
-    #localizacao button {
-        margin: initial;
-        margin-top: 2rem;
+    #sobre #sobreImgWelldnez {
+        width: 100%;
+        height: 100%;
+        margin: 0;
     }
 
     #infoFooter {
         display: block;
-        width: 100%;
-        padding-block: 2rem;
     }
 
     #lado-esquerdo {
-        width: 90%;
+        width: 95%;
+        margin: auto;
+        padding: 1rem;
+        gap: .8rem;
+    }
+
+    #info-restaurante {
+        width: 100%;
+        gap: .5rem;
+    }
+
+    #info-restaurante #logoAndName {
+        display: initial;
+    }
+
+    .footer-info {
+        font-size: 1.3rem;
+    }
+    #logoAndName h3 {
+        text-align: center;
+        font-size: 1.5rem;
     }
 
     #lado-direito {
-        gap: 10rem;  
-        width: initial;
-
-    }
-
-    #info-restaurante p {
-        padding: initial;
-        margin: initial;
+        margin: 0;
+        padding: 0;
+        width: 100%;
     }
 
     #redes-sociais {
-        display: block;
-        width: 100%;
-        padding: initial;
-        
+        display: initial;
+        width: 85%;
+        margin: auto;
+    }
+
+    #redes-sociais h4 {
+        text-align: center;
+        padding: 0.3rem;
     }
 
     #redes-sociais ul {
-        text-align: center;
-        margin-top: 2rem;
-    }
-
-    #redes-sociais ul li {
         display: flex;
+        flex-direction: row;
+        padding-bottom: 1rem;
     }
 
-    #copyright, #copyright p {
-        padding-inline: initial;
-        padding-top: 1rem;
-        font-size: 1.4rem;
-        
-    }
+    
+
 }
 
 
