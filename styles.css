@@ -26,13 +26,10 @@ html {
    background-image: url(./assets/back-localizacao.jpg);
 }
 
-body {
-    overflow-x: hidden;
-}
+
 
 #fundo {
     width: fit-content;
-    position: relative;
     margin: auto;
 }
 
@@ -523,6 +520,10 @@ nav #check:checked ~ label #cancel{
 
 }
 
+#sobre #divImg {
+    width: 45%;
+}
+
 #sobre div h3 {
     color: var(--cor-header);
     text-align: center;
@@ -537,7 +538,7 @@ nav #check:checked ~ label #cancel{
 
 #sobre img {
     height: auto;
-    width: 53rem;
+    width: 100%;
 
     margin-right: 6rem;
     margin-block: 10rem;
@@ -664,7 +665,7 @@ footer {
 
 /*======== RESPONSIVO ==========*/
 
-@media only screen and (max-width: 480px){
+    @media only screen and (max-width: 480px){
     
      /* CSS RESET */
     main, .inputAndButton, #login-btn, #logoAndName img, #navegacao, .textLink, #copyright  {
