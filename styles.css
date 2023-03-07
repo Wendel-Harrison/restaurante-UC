@@ -652,6 +652,12 @@ footer {
     justify-content: center;
 }
 
+#redes-sociais ul li a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 #copyright {
     display: flex;
     justify-content: space-between;
