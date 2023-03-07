@@ -1126,6 +1126,11 @@ footer {
         #logoAndName h3 {
             text-align: center;
             font-size: 1.7rem;
+        } 
+
+        #horario #atendimento {
+            display: flex;
+            justify-content: space-around;
         }
     
         #lado-direito {
@@ -1151,7 +1156,6 @@ footer {
             padding-bottom: 1rem;
             gap: 5rem;
         }
-           
     }
 }
 
