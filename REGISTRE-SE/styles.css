@@ -7,7 +7,7 @@
 
 main{
     margin: auto;
-    background-color: #4d8764ee;
+    background-color: #00995B;
     opacity: 0.9;
     width: 30rem;
     border-radius: 2rem;
@@ -94,7 +94,7 @@ button{
     text-transform: uppercase;
     font-weight: 700;
     color: white;
-    background-color:  #223d2d;
+    background-color:  #FF7500;
     margin-left: 22%;
 }
 

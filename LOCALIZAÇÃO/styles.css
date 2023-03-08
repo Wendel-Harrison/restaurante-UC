@@ -45,7 +45,7 @@ body {
     display: flex;
     align-items: center;
 
-    padding: 1% 0% 0% 7%;
+    padding: 1% 0% 0.5% 7%;
 
     width: 100%;
     z-index: 2;
@@ -475,11 +475,9 @@ section ul li p {
 
 footer {
     background-color: var(--cor-header);
-
 }
 
 #infoFooter {
-
     display: flex;
     justify-content: space-between;
 }
@@ -492,7 +490,7 @@ footer {
     margin-left: 5%;
     gap: 2rem;
 
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-bottom: 1.5rem;
     width: 50%;
 }
@@ -502,8 +500,12 @@ footer {
     justify-content: space-between;
     width: 50%;
     padding-top: 5rem;
+}
 
-
+#logoAndName img{
+    width: 6rem;
+    margin: 0;
+    border-radius: 3rem;
 }
 
 #info-restaurante {
@@ -515,8 +517,7 @@ footer {
 #info-restaurante div {
     display: flex;
     align-items: center;
-
-    color: white;
+    color: var(--cor-texto);
     gap: 2rem ;
     
 }
@@ -531,8 +532,8 @@ footer {
 }
 
 .footer-info {
-    font-size: 1.6rem;
-    color: white;
+    font-size: 1.8rem;
+    color: var(--cor-texto);
 }
 
 #atendimento {
@@ -547,8 +548,7 @@ footer {
 }
 
 #navegacao ul li a, #redes-sociais ul li a{
-    text-decoration: none;
-    color: white;
+    color: var(--cor-texto);
 }
 
 #navegacao ul, #redes-sociais ul {
@@ -567,12 +567,20 @@ footer {
     justify-content: center;
 }
 
+#redes-sociais ul li a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+hr {
+    margin-block: 2rem;
+}
+
 #copyright {
     display: flex;
     justify-content: space-between;
-
     font-size: 1.2rem;
-
     padding-inline: 8rem;
     padding-block: 2rem;
 }
