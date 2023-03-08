@@ -564,6 +564,8 @@ footer {
         position: relative;
         top: 6.7rem;
         width: 100%;
+        margin-bottom: 2rem;
+        padding-top: 2rem;
     }
 
     #div1, #div2, #div3, #div4, #div5, #div6, #div7 {
@@ -575,6 +577,40 @@ footer {
 
     .botao_pedidos {
         margin: 0;
+    }
+
+    .comidas {
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #div1 .comidas img, #div2 .comidas img, #div3 .comidas img, #div4 .comidas img, #div5 .comidas img, #div6 .comidas img, #div7 .comidas img {
+        width: 25%;
+        height: 25%;
+    }
+
+    .comidas h3, .comidas p, .comidas span {
+        font-size: 1.5rem;
+    }
+
+    .comidas p {
+        font-size: 1.4rem;
+    }
+
+    #agua {
+        width: 100%;
+    }
+
+    #agua div {
+        width: 100%;
+        margin-right: 2.5rem;
+    }
+
+    .botao_pedidos {
+        text-align: center;
+        margin-left: 29%;
+        margin-bottom: 1rem;
     }
 
     /* FOOTER */
