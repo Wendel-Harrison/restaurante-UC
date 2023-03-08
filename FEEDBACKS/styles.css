@@ -361,6 +361,10 @@ section {
     margin-top: 1rem;
 }
 
+#btn1 img{
+    height: 10%;
+}
+
 #btn img {
     height: 2.6rem;
     cursor: pointer;
