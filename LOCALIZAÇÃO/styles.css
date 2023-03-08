@@ -135,7 +135,7 @@ nav .sidebar {
     width: 30rem;
     left: -30rem;
     height: 100vh;
-    background: rgba(24, 24, 24, 0.966);
+    background: rgb(0, 0, 0);
     transition: all .5s ease;
     z-index: 1;
     visibility: hidden;
@@ -155,7 +155,7 @@ nav .sidebar aside {
     align-items: center;
     height: 6.5rem;
     width: 100%;
-    color: #d9560b;
+    color: var(--cor-laranja);
     line-height: 6.5rem;
     transition: all .3s ease;
     border-bottom: .1rem solid ;
@@ -190,7 +190,7 @@ nav #check {
 nav label #btn,label #cancel {
     position: absolute;
     cursor: pointer;
-    color: #d9560b;
+    color: var(--cor-laranja);
     border-radius: .5rem;
     margin: 2rem 3rem;
     font-size: 2.8rem;
@@ -199,7 +199,7 @@ nav label #btn,label #cancel {
     transition: all .5s ease;
 
     border: .1rem solid  ;
-    background: #262626;
+    background: #000;
     text-align: center;
     line-height: 5rem;
 
@@ -227,15 +227,24 @@ nav #check:checked ~ label #cancel{
 
 /* ========== sidebar mobile ========*/
 
-@media(max-width: 800px){nav .sidebar{
+@media(max-width: 800px){
+    nav .sidebar{
+    position: fixed;
     opacity: 0;
     visibility: hidden;
     height: auto;
     width: 6rem;
     left: 0;
-    margin: 7rem 0;
+    top: 5rem;
+    margin: 5rem 0;
     }
-
+    
+    nav label #btn,label #cancel{
+        position: fixed;
+        top: -1rem;
+        z-index: 2;
+    }
+        
     nav #btn {
         position: fixed;
         left: -2.5rem;
@@ -265,6 +274,7 @@ nav #check:checked ~ label #cancel{
     }
 
     nav span {
+        display: none;
         position: absolute;
         margin-left: 2.3rem;
         opacity: 0;
@@ -293,7 +303,6 @@ nav #check:checked ~ label #cancel{
     }
 
 }
-
 /* SEU CODIGO AQUI */
 
 main {
@@ -458,6 +467,10 @@ section ul li p {
     height: 42.5rem;
 }
 
+#restaurante h3 {
+    display: none;
+}
+
 /*============= FOOTER =============*/
 
 footer {
@@ -566,4 +579,215 @@ footer {
 
 #span-copy {
     margin-inline: 3rem;
+}
+
+/* RESPONSIVO */
+
+@media only screen and (max-width: 480px){
+    
+    /* CSS RESET */
+    .inputAndButton, #login-btn, #logoAndName img, #navegacao, .textLink, #copyright, #imagens  {
+       display: none;
+   }
+
+   #redes-sociais {
+       padding: 0;
+   }
+
+   #info-restaurante p {
+       padding-right: 0;
+   }
+
+
+   /* ----------------- */
+
+   body {
+       width: 100%;
+   }
+   #fundo {
+       width: 100%;
+   }
+
+   #cabecalho {
+       position: fixed;
+       width: 100%;
+       justify-content: center;
+       padding: 0;
+       height: 6.7rem;
+       margin: 0;
+       z-index: 1;
+   }
+   
+   .logo {
+       height: 60px;
+       margin: auto;
+       padding: 0;
+       margin: 0;
+   }
+
+   #logoImg {
+       height: 100%;
+       width: 100%;
+   }
+
+   main {
+    padding-top: 6.7rem;
+   }
+
+   #app-img {
+    width: 50%;
+    height: 50%;
+    margin: 0;
+   }
+
+   .title {
+    font-size: 2rem;
+   }
+
+   #app {
+    width: 90%;
+    margin-left: 0;
+    margin: auto;
+   }
+
+   main ul li {
+    font-size: 1.5rem;
+   }
+
+   #app button {
+    font-size: 1rem;
+    padding: 1.5rem;
+   }
+
+   #app h3 {
+    font-size: 1.5rem;
+   }
+
+   #app p {
+    font-size: 1rem;
+   }
+
+   #delivery img {
+    width: 6rem;
+   }
+
+   #title-loca {
+    font-size: 2rem;
+    padding-block: 3rem;
+   }
+
+   section div {
+       margin: 0;
+       display: block;
+    }
+    
+    section ul {
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin: auto;
+        gap: 1rem;
+        row-gap: 2rem;
+   }
+
+   section ul li {
+    padding: 1rem;
+    width: auto;
+   }
+
+   section ul li h3 {
+    font-size: 1.5rem;
+   }
+
+   section ul li p {
+    font-size: 1.3rem;
+   }
+
+   section a {
+    width: 100%;
+    font-size: 1rem;
+    margin-left: 10%;
+    text-align: center;
+   }
+
+   #restaurante {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-block: 3rem;
+   }
+
+   #restaurante img {
+    width: 90%;
+    margin: auto;
+    height: 15rem;
+
+   }
+
+   #restaurante h3 {
+    font-family: 'dancing script';
+    font-size: 2.5rem;
+    text-align: center;
+    display: initial;
+   }
+
+
+
+
+   /* FOOTER */
+
+   
+
+
+   #infoFooter {
+    display: block;
+    }
+
+    #lado-esquerdo {
+        width: 95%;
+        margin: auto;
+        padding: 1rem;
+        gap: .8rem;
+    }
+
+    #info-restaurante {
+        width: 100%;
+        gap: .5rem;
+    }
+
+    #info-restaurante #logoAndName {
+        display: initial;
+    }
+
+    .footer-info {
+        font-size: 1.3rem;
+    }
+    #logoAndName h3 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #lado-direito {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    #redes-sociais {
+        display: initial;
+        width: 85%;
+        margin: auto;
+    }
+
+    #redes-sociais h4 {
+        text-align: center;
+        padding: 0.3rem;
+    }
+
+    #redes-sociais ul {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 1rem;
+    }
 }

@@ -611,54 +611,54 @@ footer {
 
    /*  FOOTER  */
 
-   #infoFooter {
-    display: block;
-}
+    #infoFooter {
+        display: block;
+    }
 
-#lado-esquerdo {
-    width: 95%;
-    margin: auto;
-    padding: 1rem;
-    gap: .8rem;
-}
+    #lado-esquerdo {
+        width: 95%;
+        margin: auto;
+        padding: 1rem;
+        gap: .8rem;
+    }
 
-#info-restaurante {
-    width: 100%;
-    gap: .5rem;
-}
+    #info-restaurante {
+        width: 100%;
+        gap: .5rem;
+    }
 
-#info-restaurante #logoAndName {
-    display: initial;
-}
+    #info-restaurante #logoAndName {
+        display: initial;
+    }
 
-.footer-info {
-    font-size: 1.3rem;
-}
-#logoAndName h3 {
-    text-align: center;
-    font-size: 1.5rem;
-}
+    .footer-info {
+        font-size: 1.3rem;
+    }
+    #logoAndName h3 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
 
-#lado-direito {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-}
+    #lado-direito {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
 
-#redes-sociais {
-    display: initial;
-    width: 85%;
-    margin: auto;
-}
+    #redes-sociais {
+        display: initial;
+        width: 85%;
+        margin: auto;
+    }
 
-#redes-sociais h4 {
-    text-align: center;
-    padding: 0.3rem;
-}
+    #redes-sociais h4 {
+        text-align: center;
+        padding: 0.3rem;
+    }
 
-#redes-sociais ul {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 1rem;
-}
+    #redes-sociais ul {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 1rem;
+    }
 }

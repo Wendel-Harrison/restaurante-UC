@@ -42,7 +42,7 @@ body {
     display: flex;
     align-items: center;
 
-    padding: 1% 0% 0% 7%;
+    padding: 1% 0% 0.5% 7%;
 
     width: 100%;
     z-index: 2;
