@@ -132,8 +132,6 @@ header div {
 }
 
 #pesquisa {
-
-
     width: 90% ;
     height: 3.9rem;
 
@@ -141,8 +139,6 @@ header div {
     opacity: 70%;
     border-radius: .5rem;
     border: none;
-
-    
 
     padding-left: 17%;
     font-size: 2rem;
