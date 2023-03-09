@@ -103,3 +103,40 @@ button:hover{
     background-color: white;
     transition: 0.5s ease;
 }
+
+@media screen and (max-width: 480px){
+
+main{
+    width: 90%;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+#imagem{
+    margin-top: 0;
+    padding: 2rem;
+}
+
+main a{
+    width: 15%;
+    height: 15%;
+}
+
+#imagem{
+    width: 100%;
+}
+
+#imagem h1{
+    font-size: 2rem;
+}
+
+#forms{
+    margin: auto;
+    width: 80%;
+}
+
+#registro h1{
+
+}
+
+}
