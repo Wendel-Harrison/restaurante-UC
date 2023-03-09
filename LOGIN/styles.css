@@ -103,13 +103,66 @@ button{
     font-weight: 700;
     text-transform: uppercase;
     border-radius: 1rem;
-
     cursor: pointer;
-
 }
 
 #senha, #link{
     margin-left: 7.3rem;
-    color: white;
     margin-bottom: 3rem;
+}
+
+#senha{
+    font-size: 1.8rem;
+}
+
+@media only screen and (max-width: 480px){
+    main{
+        width: 90%;
+        margin-bottom: 3rem;
+        margin-top: 3rem;
+    }
+
+    #logo{
+        margin-top: 0;
+        padding-top: 3rem;
+    }
+
+    #logo a{
+        width: 15%;
+        height: 15%;
+
+    }
+
+    #logoImg{
+        width: 100%;
+
+    }
+
+    #logo h1{
+        font-size: 2rem;
+    }
+
+    .input{
+        margin: auto;
+        width: 80%;
+        margin-bottom: 0.5rem;
+    }
+
+    main p{
+        font-size: 1.5rem;
+    }
+
+    #senha{
+        font-size: 1.5rem;
+        padding-bottom: 2rem;
+    }
+
+    #btn{
+        margin-bottom: 3rem;
+    }
+
+    #link{
+        padding-top: 1rem;
+    }
+ 
 }
