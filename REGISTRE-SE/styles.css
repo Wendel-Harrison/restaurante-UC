@@ -109,7 +109,7 @@ button:hover{
 main{
     width: 90%;
     margin-bottom: 3rem;
-    margin-top: 3rem;
+    height: auto;
 }
 
 #imagem{
@@ -117,26 +117,62 @@ main{
     padding: 2rem;
 }
 
+#divImg {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
 main a{
-    width: 15%;
-    height: 15%;
+    height: 100%;
 }
 
 #imagem{
-    width: 100%;
-}
-
-#imagem h1{
-    font-size: 2rem;
-}
-
-#forms{
+    width: 6rem;
+    height: 6rem;
+    padding: 0;
     margin: auto;
-    width: 80%;
 }
 
-#registro h1{
+    #registro {
+        font-size: 1.8rem;
+        padding-top: 1rem;
+    }
 
-}
+    h2 {
+        font-size: 1.3rem;
+        padding-block: .5rem;
+    }
+
+    h2 a {
+        margin: 0;
+    }
+
+    #forms {
+        display: block;
+    }
+
+    input {
+        margin-block: .5rem;
+    }
+
+    #checkbox {
+        margin-left: .75rem;
+    }
+
+    #botao {
+        margin-top: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    button {
+        margin: 0;
+        padding: 0;
+        padding-block: 0.938rem;
+        width: 70%;
+        margin-bottom: 2rem;
+    }
 
 }
