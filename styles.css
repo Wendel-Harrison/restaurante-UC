@@ -22,7 +22,6 @@
 
 html {
     scroll-behavior: smooth;
-   background-color: var(--cor-secundaria);
    background-image: url(./assets/back-localizacao.jpg);
 }
 
