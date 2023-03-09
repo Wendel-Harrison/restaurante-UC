@@ -11,8 +11,11 @@
 :root {
     font-size: 62.5%; /* 1rem = 10px */
 
-    --cor-primaria: #4D8764;
-    --cor-secundaria: #6CBE83;
+    --cor-primaria: #4cbc0d;
+    --cor-secundaria: #28590b;
+    --cor-terceira: #bf0a0a;
+    --cor-header: #00995B;
+    --cor-laranja: #FF7500;
 
     --cor-texto: #FFFFFF;
 }
@@ -39,7 +42,7 @@ body {
     display: flex;
     align-items: center;
 
-    padding: 1% 0% 0% 7%;
+    padding: 1% 0% 0.5% 7%;
 
     width: 100%;
     z-index: 2;
@@ -51,28 +54,27 @@ body {
     cursor: pointer;
 }
 
-#cabecalho, #carrossel {
-    background-color: var(--cor-secundaria);
+#cabecalho {
+    background-color: var(--cor-header);
 }
 
 header div {
-    padding-left: 2rem;
-    display: flex;
-    gap: 3rem;
-}
-
-#menuImg {
-    width: 100%;
+    padding-left: 2%;
+    display: flex; 
+    gap: 3%; 
 }
 
 #loginImg {
     width: 100%;
+    background-color: whitesmoke;
+    border-radius: 3rem;
 }
 
 #loginImg:hover {
-    background-color: var(--cor-texto);
-    border-radius: 30px;
-    transition: 0.1s;
+    background-color: var(--cor-primaria);
+    border-radius: 3rem;
+    transition: 0.5s;
+    
 }
 
 #pesquisa-btn {
@@ -82,16 +84,14 @@ header div {
 
 #logoImg {
     width: 6rem;
-    margin: 0;
-    border-radius: 3rem;
 }
 
 .logo {
-    margin-left: 40%;
+    margin-left: 37%;
 }
 
 .inputAndButton {
-    margin-left: 25%;
+    margin-left: 27%;
 }
 
 #pesquisa::placeholder {
@@ -104,12 +104,12 @@ header div {
     width: 90% ;
     height: 3.9rem;
 
-    background-color: var(--cor-primaria)  ;
+    background-color: #28590b50 ;
     opacity: 70%;
-    border-radius: 1rem;
+    border-radius: .5rem;
     border: none;
 
-
+    
 
     padding-left: 17%;
     font-size: 2rem;
@@ -124,7 +124,7 @@ nav .sidebar {
     width: 30rem;
     left: -30rem;
     height: 100vh;
-    background: rgba(24, 24, 24, 0.966);
+    background: rgb(0, 0, 0);
     transition: all .5s ease;
     z-index: 1;
     visibility: hidden;
@@ -148,7 +148,7 @@ nav .sidebar aside {
     line-height: 6.5rem;
     transition: all .3s ease;
     border-bottom: .1rem solid ;
-    border-top: .1rem solid rgba(255, 255, 255, .1);
+    border-top: .1rem solid rgb(0, 0, 0);
     border-left: .5rem solid transparent;
 }
 
@@ -188,7 +188,7 @@ nav label #btn,label #cancel {
     transition: all .5s ease;
 
     border: .1rem solid  ;
-    background: #262626;
+    background: #000;
     text-align: center;
     line-height: 5rem;
 
@@ -216,19 +216,54 @@ nav #check:checked ~ label #cancel{
 
 /* ========== sidebar mobile ========*/
 
-@media(max-width: 800px){nav .sidebar{
+@media(max-width: 800px){
+    nav .sidebar{
     position: fixed;
+    opacity: 0;
+    visibility: hidden;
     height: auto;
     width: 6rem;
     left: 0;
-    margin: 10rem 0;
+    top: 5rem;
+    margin: 5rem 0;
+    }
+    
+    nav label #btn,label #cancel{
+        position: fixed;
+        top: -1rem;
+        z-index: 2;
+    }
+        
+    nav #btn {
+        position: fixed;
+        left: -2.5rem;
     }
 
-    nav aside,#btn,#cancel {
+    #cancel {
+        position: fixed;
+    }
+
+    nav #check:checked ~ label #cancel{
+        margin-top: 2rem;
+        margin-left: 0.5rem;
+    }
+
+    nav #check:checked ~ label #btn {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav #check:checked ~ .sidebar {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    nav aside{
         display: none;
     }
 
     nav span {
+        display: none;
         position: absolute;
         margin-left: 2.3rem;
         opacity: 0;
@@ -253,9 +288,8 @@ nav #check:checked ~ label #cancel{
     nav .sidebar a:hover span {
         opacity: 1;
         visibility: visible;
-        margin-left: 4rem;
+        margin-left: 5rem;
     }
-
 }
 
 
@@ -413,12 +447,10 @@ section {
 /*============= FOOTER =============*/
 
 footer {
-    background-color: #28590b;
-
+    background-color: var(--cor-header);
 }
 
 #infoFooter {
-
     display: flex;
     justify-content: space-between;
 }
@@ -431,7 +463,7 @@ footer {
     margin-left: 5%;
     gap: 2rem;
 
-    padding-top: 5rem;
+    padding-top: 3rem;
     padding-bottom: 1.5rem;
     width: 50%;
 }
@@ -441,8 +473,12 @@ footer {
     justify-content: space-between;
     width: 50%;
     padding-top: 5rem;
+}
 
-
+#logoAndName img{
+    width: 6rem;
+    margin: 0;
+    border-radius: 3rem;
 }
 
 #info-restaurante {
@@ -454,7 +490,6 @@ footer {
 #info-restaurante div {
     display: flex;
     align-items: center;
-
     color: var(--cor-texto);
     gap: 2rem ;
     
@@ -470,7 +505,7 @@ footer {
 }
 
 .footer-info {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: var(--cor-texto);
 }
 
@@ -486,7 +521,6 @@ footer {
 }
 
 #navegacao ul li a, #redes-sociais ul li a{
-    text-decoration: none;
     color: var(--cor-texto);
 }
 
@@ -506,16 +540,199 @@ footer {
     justify-content: center;
 }
 
+#redes-sociais ul li a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 #copyright {
     display: flex;
     justify-content: space-between;
-
     font-size: 1.2rem;
-
     padding-inline: 8rem;
     padding-block: 2rem;
 }
 
 #span-copy {
     margin-inline: 3rem;
+}
+
+/* RESPONSIVO */
+
+@media only screen and (max-width: 480px){
+    
+    /* CSS RESET */
+    .inputAndButton, #login-btn, #logoAndName img, #navegacao, .textLink, #copyright  {
+       display: none;
+   }
+
+   body {
+    width: 100%;
+    }
+
+
+    #cabecalho {
+        position: fixed;
+        width: 100%;
+        justify-content: center;
+        padding: 0;
+        height: 6.7rem;
+        margin: 0;
+        z-index: 1;
+    }
+
+    .logo {
+        height: 60px;
+        margin: auto;
+        padding: 0;
+        margin: 0;
+    }
+
+    #logoImg {
+        height: 100%;
+        width: 100%;
+    }
+
+    main {
+        background: none;
+        background-color: #F5F5F5;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    main h2 {
+        margin-top: 6.7rem;
+        text-align: center;
+        width: 100%;
+        padding: 2rem;
+        border-radius: 0;
+    }
+
+    .Btncomidas {
+        position: relative;
+        width: 80%;
+        margin-bottom: 2rem;
+        padding-top: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 1rem;
+    }
+
+    .Btncomidas button {
+        padding: 1.5rem;
+
+    }
+
+    #div1, #div2, #div3, #div4, #div5, #div6, #div7 {
+        margin: 0;
+        padding-inline: 0;
+        display: block;
+        width: 100%;
+    }
+
+    #div1 {
+        padding-top: 0;
+    }
+
+    .botao_pedidos {
+        margin: 0;
+    }
+
+    .comidas {
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #div1 .comidas img, #div2 .comidas img, #div3 .comidas img, #div4 .comidas img, #div5 .comidas img, #div6 .comidas img, #div7 .comidas img {
+        width: 25%;
+        height: 25%;
+    }
+
+    .comidas h3, .comidas p, .comidas span {
+        font-size: 1.5rem;
+    }
+
+    .comidas p {
+        font-size: 1.4rem;
+    }
+
+    #agua {
+        width: 100%;
+    }
+
+    #agua div {
+        width: 100%;
+        margin-right: 2.5rem;
+    }
+
+    .botao_pedidos {
+        text-align: center;
+        margin-left: 29%;
+        margin-bottom: 3rem;
+    }
+
+    /* FOOTER */
+
+    #redes-sociais {
+        padding: 0;
+    }
+
+    #info-restaurante p {
+        padding-right: 0;
+    }
+
+    #infoFooter {
+        display: block;
+    }
+
+    #lado-esquerdo {
+        width: 95%;
+        margin: auto;
+        padding: 1rem;
+        gap: .8rem;
+    }
+
+    #info-restaurante {
+        width: 100%;
+        gap: .5rem;
+    }
+
+    #info-restaurante #logoAndName {
+        display: initial;
+    }
+
+    .footer-info {
+        font-size: 1.3rem;
+    }
+    #logoAndName h3 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #lado-direito {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    #redes-sociais {
+        display: initial;
+        width: 85%;
+        margin: auto;
+    }
+
+    #redes-sociais h4 {
+        text-align: center;
+        padding: 0.3rem;
+    }
+
+    #redes-sociais ul {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 1rem;
+    }
 }

@@ -14,14 +14,15 @@
     --cor-primaria: #4cbc0d;
     --cor-secundaria: #28590b;
     --cor-terceira: #bf0a0a;
-    --cor-header: #6CBE83;
+    --cor-header: #00995B;
+    --cor-laranja: #FF7500;
 
     --cor-texto: #FFFFFF;
 }
 
 html {
     scroll-behavior: smooth;
-   background-color: #D9D9D9;
+   background-color: #F4F4F4;
    background-image: url(./assets/back-localizacao.jpg);
 }
 
@@ -35,52 +36,11 @@ body {
     margin: auto;
 }
 
-
-#img-carrossel-pc {
-    background-image: url(./assets/foto_carrousel2.png);
-    height: 75rem ;
-    background-size: cover;
-
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-#carrossel {
-    padding-top: 1%;
-
-}
-
-#box {
-    background-color: #df4103;
-    height: 36rem;
-    width: 36rem;
-    margin-top: 35rem;
-    margin-right: 10rem;
-
-    border-radius: 20rem;;
-}
-
-#box p {
-    color: white;
-    text-align: center;
-    font-size: 2.4rem;
-    margin-top: 8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    padding: 2rem;
-}
-
-#box span {
-    color: var(--cor-header);
-}
-
-
-
 #cabecalho {
     display: flex;
     align-items: center;
 
-    padding: 1% 0% 0% 7%;
+    padding: 1% 0% 0.5% 7%;
     background-color: var(--cor-header);
 }
 
@@ -90,9 +50,6 @@ body {
     cursor: pointer;
 }
 
-#carrossel  {
-    padding: 0;
-}
 
 header div {
     padding-left: 2%;
@@ -164,7 +121,7 @@ nav .sidebar {
     width: 30rem;
     left: -30rem;
     height: 100vh;
-    background: rgba(24, 24, 24, 0.966);
+    background: rgb(0, 0, 0);
     transition: all .5s ease;
     z-index: 1;
     visibility: hidden;
@@ -184,7 +141,7 @@ nav .sidebar aside {
     align-items: center;
     height: 6.5rem;
     width: 100%;
-    color: #d9560b;
+    color: var(--cor-laranja);
     line-height: 6.5rem;
     transition: all .3s ease;
     border-bottom: .1rem solid ;
@@ -219,16 +176,16 @@ nav #check {
 nav label #btn,label #cancel {
     position: absolute;
     cursor: pointer;
-    color: #d9560b;
+    color: var(--cor-laranja);
     border-radius: .5rem;
     margin: 2rem 3rem;
     font-size: 2.8rem;
     height: 5rem;
-    width: 6.1rem;
+    width: 5rem;
     transition: all .5s ease;
 
-    border: .1rem solid;
-    background: #262626;
+    border: .1rem solid  ;
+    background: #000;
     text-align: center;
     line-height: 5rem;
 
@@ -254,8 +211,91 @@ nav #check:checked ~ label #cancel{
    
 }
 
+/* ========== sidebar mobile ========*/
+
+@media(max-width: 800px){
+    nav .sidebar{
+    position: fixed;
+    opacity: 0;
+    visibility: hidden;
+    height: auto;
+    width: 6rem;
+    left: 0;
+    top: 5rem;
+    margin: 5rem 0;
+    }
+    
+    nav label #btn,label #cancel{
+        position: fixed;
+        top: -1rem;
+        z-index: 2;
+    }
+        
+    nav #btn {
+        position: fixed;
+        left: -2.5rem;
+    }
+
+    #cancel {
+        position: fixed;
+    }
+
+    nav #check:checked ~ label #cancel{
+        margin-top: 2rem;
+        margin-left: 0.5rem;
+    }
+
+    nav #check:checked ~ label #btn {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav #check:checked ~ .sidebar {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    nav aside{
+        display: none;
+    }
+
+    nav span {
+        display: none;
+        position: absolute;
+        margin-left: 2.3rem;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav .sidebar a{
+        height: 6rem;
+    }
+
+    nav .sidebar a i {
+        margin-left: 1px;
+        padding-left: 1rem;
+    }
+
+    nav a:hover {
+        width: 20rem;
+        background: inherit;
+        border-bottom-right-radius: 30px;
+    }
+
+    nav .sidebar a:hover span {
+        opacity: 1;
+        visibility: visible;
+        margin-left: 5rem;
+    }
+
+}
+
 
 /* SEU CODIGO AQUI */
+
+h1 {
+    display: none;
+}
 
 header {
     display: flex;
@@ -314,11 +354,15 @@ section {
 }
 
 
-#btn {
+#btn1 {
     display: flex;
     justify-content: space-between;
     padding-inline: 2rem;
     margin-top: 1rem;
+}
+
+#btn1 img{
+    height: 10%;
 }
 
 #btn img {
@@ -328,7 +372,7 @@ section {
 
 #btn_enviar {
     padding: 1.5rem;
-    background-color: #00694A;
+    background-color: var(--cor-header);
     color: white;
     border-radius: 1rem;
     text-transform: uppercase;
@@ -342,7 +386,7 @@ section {
 /*============= FOOTER =============*/
 
 footer {
-    background-color: var(--cor-secundaria);
+    background-color: var(--cor-header);
 }
 
 #infoFooter {
@@ -435,6 +479,12 @@ footer {
     justify-content: center;
 }
 
+#redes-sociais ul li a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
 #copyright {
     display: flex;
     justify-content: space-between;
@@ -445,4 +495,180 @@ footer {
 
 #span-copy {
     margin-inline: 3rem;
+}
+
+/* RESPONSIVO  */
+
+@media only screen and (max-width: 480px){
+    
+    /* CSS RESET */
+    .inputAndButton, #login-btn, #logoAndName img, #navegacao, .textLink, #copyright  {
+       display: none;
+   }
+
+   #redes-sociais {
+       padding: 0;
+   }
+
+   #info-restaurante p {
+       padding-right: 0;
+   }
+
+
+   /* ----------------- */
+
+   body {
+       width: 100%;
+   }
+   #fundo {
+       width: 100%;
+   }
+
+   #cabecalho {
+       position: fixed;
+       width: 100%;
+       justify-content: center;
+       padding: 0;
+       height: 6.7rem;
+       margin: 0;
+       z-index: 1;
+   }
+   
+   .logo {
+       height: 60px;
+       margin: auto;
+       padding: 0;
+       margin: 0;
+   }
+
+   #logoImg {
+       height: 100%;
+       width: 100%;
+   }
+
+   main {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding-top: 6.7rem;
+   }
+
+   h1 {
+    display: block;
+    text-align: center;
+    font-size: 3rem;
+    background-color: var(--cor-laranja);
+    color: #fff;
+    padding: 2rem;
+    margin-bottom: 5rem;
+    width: 100%;
+   }
+   #box2 {
+    margin-left: 0;
+   }
+
+    section, #box2 {
+    width: 90%;
+    margin: auto;
+    margin-bottom: 3rem;
+   }
+
+   #ellipse1, #ellipse2, #ellipse3 {
+    height: 6rem;
+    width: 6rem;
+   }
+
+   section div p {
+    font-size: 1.5rem;
+   }
+
+   section div img {
+    height: 100%;
+   }
+
+   section .estrelas {
+    margin: 0;
+    width: 30%;
+   }
+
+
+
+
+   .divBtn {
+    width: 100%;
+   }
+
+   #textarea {
+    width: 90%;
+    height: 15rem;
+    margin: 5%;
+    margin-bottom: 1%;
+   }
+
+   #btn1 {
+    align-items: center;
+    margin-bottom: 3rem;
+   }
+
+   #btn1 img{
+    width: 40%;
+    height: 40%;
+   }
+
+   #btn_enviar {
+    margin-bottom: 0;
+   }
+
+   /*  FOOTER  */
+
+    #infoFooter {
+        display: block;
+    }
+
+    #lado-esquerdo {
+        width: 95%;
+        margin: auto;
+        padding: 1rem;
+        gap: .8rem;
+    }
+
+    #info-restaurante {
+        width: 100%;
+        gap: .5rem;
+    }
+
+    #info-restaurante #logoAndName {
+        display: initial;
+    }
+
+    .footer-info {
+        font-size: 1.3rem;
+    }
+    #logoAndName h3 {
+        text-align: center;
+        font-size: 1.5rem;
+    }
+
+    #lado-direito {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+
+    #redes-sociais {
+        display: initial;
+        width: 85%;
+        margin: auto;
+    }
+
+    #redes-sociais h4 {
+        text-align: center;
+        padding: 0.3rem;
+    }
+
+    #redes-sociais ul {
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 1rem;
+    }
 }
