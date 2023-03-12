@@ -55,7 +55,8 @@ html {
     margin-top: 35rem;
     margin-right: 10rem;
 
-    border-radius: 20rem;;
+    border-radius: 20rem;
+    display: none;
 }
 
 #box p {
