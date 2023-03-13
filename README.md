@@ -20,11 +20,11 @@
 
 <p align="center">Colabores: </p>
 
-Wendel Harrison;<br>
+Wendel Harrison; <a>https://github.com/wHarrisonna</a> <br>
 Gabriela Nunes;<br>
 Guilherme Gabriel;<br>
 Raphael Verseck;<br>
-Roger;<br>
+Roger Vieira;<br>
 Willian Rizzo.
 
 
