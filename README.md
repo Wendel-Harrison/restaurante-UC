@@ -8,25 +8,26 @@
 
 {
     <ul>
-    <li>FIGMA
-    <li>HTML
-    <li>CSS
-    <li>JavaScript
-    <li>GIT
-    <li>GITHUB
+    <li>FIGMA <img align="center" height="30" width="40" alt="js-icon"  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/figma/figma-original.svg">
+    <li>HTML <img align="center" height="30" width="40" alt="js-icon"  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original.svg">
+    <li>CSS <img align="center" height="30" width="40" alt="js-icon"  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original.svg">
+    <li>JavaScript <img align="center" height="30" width="40" alt="js-icon"  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
+    <li>GIT <img align="center" height="30" width="40" alt="js-icon"  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/git/git-plain.svg">
+    <li>GITHUB <img align="center" height="30" width="40" alt="js-icon"  src="https://raw.githubusercontent.com/devicons/devicon/master/icons/github/github-original.svg">
     </ul>
 }
 
-<p align="center">Para ver o design e layout do projeto acesse: </p>
+<p align="center">Para ver o design e prototipo do projeto acesse:
+<a align="center" href="https://www.figma.com/file/lEMeP1hKQXL1EOXVWqP93N/WELLDNEZ---UC?node-id=0%3A1&t=4gKdcBXDngs7zeoS-1">Figma </a></p>
 
 <p align="center">Colabores: </p>
 
-Wendel Harrison; <a>https://github.com/wHarrisonn</a> <br>
-Gabriela Nunes;  <br>
-Guilherme Gabriel;<br>
-Raphael Verseck; <a>https://github.com/Verseck</a><br>
-Roger Vieira; <a>https://github.com/roger1st</a><br>
-Willian Rizzo. <a>https://github.com/willianrizzo</a>
+Wendel Harrison; <a href="https://github.com/wHarrisonn"> - Github</a> <a href="https://www.linkedin.com/in/wendel-harrison-0a66a119b/"> - LinkedIn</a>  <br>
+Gabriela Nunes;  <a href="https://github.com/GabyNunes17"> - Github</a> <a href="https://www.linkedin.com/in/gabriela-nunes-a4914222b/"> - LinkedIn</a><br>
+Guilherme Gabriel; <a href="https://github.com/GuilhermeGGarcia12"> - Github</a> <a href="https://www.linkedin.com/in/guilherme-garcia-32980a226/"> - LinkedIn</a> <br> 
+Raphael Verseck; <a href="https://github.com/Verseck"> - Github</a> <a href="https://www.linkedin.com/in/raphael-verseck-soleo-dos-santos-b58305207/"> - LinkedIn</a><br>
+Roger Vieira; <a href="https://github.com/roger1st"></a> - Github <a href="https://www.linkedin.com/in/roger-vieira-538400252/"> - LinkedIn</a><br>
+Willian Rizzo. <a href="https://github.com/willianrizzo"> - Github <a href="https://www.linkedin.com/in/willian-rizzo-rat%C3%A3o/"> - LinkedIn</a></a>
 
 
 
